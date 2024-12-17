@@ -65,7 +65,8 @@ body {
     margin: 7.5px 0px 0px 40px;
     background-color: rgb(48, 48, 48);
     height: 55px;
-    width: 1000px;
+    width: 750px;
+    min-width: 750px;
     border: 2px solid rgb(77, 77, 77);
     border-radius: 10px;
 }
@@ -92,7 +93,7 @@ body {
 #option_buttons {
     position: absolute;
     top: 15px;
-    right: 15px;
+    left: 1650px;
     width: 422.5px;
     height: 45px;
 }
