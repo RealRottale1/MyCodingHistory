@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title id="game-title">Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/75/75519.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="all-content">
+    <div id="left-section">
+      <div id="left-tab">
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.flaticon.com/512/75/75519.png" alt="piece_icon">
+        </button>
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.flaticon.com/512/3524/3524377.png" alt="piece_icon">
+        </button>
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.freepik.com/512/5345/5345954.png" alt="piece_icon">
+        </button>
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.freepik.com/512/15867/15867365.png" alt="piece_icon">
+        </button>
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.freepik.com/512/4400/4400836.png" alt="piece_icon">
+        </button>
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.freepik.com/512/15867/15867377.png" alt="piece_icon">
+        </button>
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.freepik.com/512/3916/3916701.png" alt="piece_icon">
+        </button>
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.freepik.com/512/15867/15867373.png" alt="piece_icon">
+        </button>
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.freepik.com/512/4338/4338830.png" alt="piece_icon">
+        </button>
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.freepik.com/512/15867/15867383.png" alt="piece_icon">
+        </button>
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.freepik.com/512/15867/15867343.png" alt="piece_icon">
+        </button>
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.freepik.com/512/15867/15867389.png" alt="piece_icon">
+        </button>
+      </div>
+      <p id="left-wins">
+        Wins: 0
+      </p>
+    </div>
+    <div class="game">
+      <div class="turn-div">
+        <img id="turn-image">
+        <p id="turn-text">
+          Is up!
+        </p>
+      </div>
+      <div id="win-line">
+      </div>
+      <div class="game-board">
+        <button class="piece-button" id="0">
+          <img class="piece-icon" alt="Empty">
+        </button>
+        <button class="piece-button" id="1">
+          <img class="piece-icon" alt="Empty">
+        </button>
+        <button class="piece-button" id="2">
+          <img class="piece-icon" alt="Empty">
+        </button>
+        <button class="piece-button" id="3">
+          <img class="piece-icon" alt="Empty">
+        </button>
+        <button class="piece-button" id="4">
+          <img class="piece-icon" alt="Empty">
+        </button>
+        <button class="piece-button" id="5">
+          <img class="piece-icon" alt="Empty">
+        </button>
+        <button class="piece-button" id="6">
+          <img class="piece-icon" alt="Empty">
+        </button>
+        <button class="piece-button" id="7">
+          <img class="piece-icon" alt="Empty">
+        </button>
+        <button class="piece-button" id="8">
+          <img class="piece-icon" alt="Empty">
+        </button>
+      </div>
+      <div class="bottom-options">
+        <button id="undo-button"></button>
+        <button id="skip-button"></button>
+        <button id="settings-button"></button>
+        <button id="reset-button"></button>
+        <button id="forfeit-button"></button>
+      </div>
+    </div>
+    <div id="right-section">
+      <div id="right-tab">
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.flaticon.com/512/75/75519.png" alt="piece_icon">
+        </button>
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.flaticon.com/512/3524/3524377.png" alt="piece_icon">
+        </button>
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.freepik.com/512/5345/5345954.png" alt="piece_icon">
+        </button>
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.freepik.com/512/15867/15867365.png" alt="piece_icon">
+        </button>
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.freepik.com/512/4400/4400836.png" alt="piece_icon">
+        </button>
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.freepik.com/512/15867/15867377.png" alt="piece_icon">
+        </button>
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.freepik.com/512/3916/3916701.png" alt="piece_icon">
+        </button>
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.freepik.com/512/15867/15867373.png" alt="piece_icon">
+        </button>
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.freepik.com/512/4338/4338830.png" alt="piece_icon">
+        </button>
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.freepik.com/512/15867/15867383.png" alt="piece_icon">
+        </button>
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.freepik.com/512/15867/15867343.png" alt="piece_icon">
+        </button>
+        <button class="cosmetic-button">
+          <img class="cosmetic-icon" src="https://cdn-icons-png.freepik.com/512/15867/15867389.png" alt="piece_icon">
+        </button>
+      </div>
+      <p id="right-wins">
+        Wins: 0
+      </p>
+    </div>
+  </div>
+  <!--Setting Menu-->
+  <div id="settings-menu">
+    <p class="setting-title" id="main-setting-title">
+      Settings
+    </p>
+    <!--Display Section-->
+    <div class="setting-div">
+      <p class="setting-title sub-setting-title">Display</p>
+      <!--LightMode Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">Light Mode</p>
+        <div class="tog-switch tog-switch-on">
+          <button class="tog-switch-button tog-switch-button-on" id="LightMode"></button>
+        </div>
+      </div>
+      <!--Player1 Color Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">Player1 Same RGB Value</p>
+        <input class="tog-input-box" id="P1SC" type="text" placeholder="255, 0, 0">
+      </div>
+      <!--Player2 Color Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">Player2 Same RGB Value</p>
+        <input class="tog-input-box" id="P2SC" type="text" placeholder="0, 0, 255">
+      </div>
+      <!--Fog Color Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">Fog Color</p>
+        <input class="tog-input-box" id="FogColor" type="text" placeholder="125, 125, 125">
+      </div>
+      <!--Removed Block Color Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">Removed Block Color</p>
+        <input class="tog-input-box" id="RemovedBlockColor" type="text" placeholder="0, 0, 0">
+      </div>
+      <!--Win Line Color Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">Win Line Color</p>
+        <input class="tog-input-box" id="WinLineColor" type="text" placeholder="255, 0, 0">
+      </div>
+    </div>
+
+    <!--Game Rules Section-->
+    <div class="setting-div">
+      <p class="setting-title sub-setting-title">Game Rules</p>
+      <!--4 Corners Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">4 Corners</p>
+        <div class="tog-switch">
+          <button class="tog-switch-button" id="FourCorners"></button>
+        </div>
+      </div>
+      <!--Overide Pieces Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">Overide Pieces</p>
+        <div class="tog-switch">
+          <button class="tog-switch-button" id="OveridePieces"></button>
+        </div>
+      </div>
+      <!--Random Location Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">Random Location</p>
+        <div class="tog-switch">
+          <button class="tog-switch-button" id="RandomLocation"></button>
+        </div>
+      </div>
+      <!--Fog Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">Fog</p>
+        <div class="tog-switch">
+          <button class="tog-switch-button" id="Fog"></button>
+        </div>
+      </div>
+      <!--Fog Disappear On Win Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">Remove Fog On Full Board</p>
+        <div class="tog-switch tog-switch-on">
+          <button class="tog-switch-button tog-switch-button-on" id="FogDisappear"></button>
+        </div>
+      </div>  
+      <!--Points Per Win Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">Points Per Win</p>
+        <input class="tog-input-box" id="PointsPerWin" type="text" placeholder="1">
+      </div>
+    </div>
+
+    <!--Board Setting Section-->
+    <div class="setting-div">
+      <p class="setting-title sub-setting-title">Board Settings</p>
+      <!--Remove Block 1 Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">Remove Block 1</p>
+        <div class="tog-switch">
+          <button class="tog-switch-button" id="RB1"></button>
+        </div>
+      </div>
+      <!--Remove Block 2 Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">Remove Block 2</p>
+        <div class="tog-switch">
+          <button class="tog-switch-button" id="RB2"></button>
+        </div>
+      </div>
+      <!--Remove Block 3 Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">Remove Block 3</p>
+        <div class="tog-switch">
+          <button class="tog-switch-button" id="RB3"></button>
+        </div>
+      </div>
+      <!--Remove Block 4 Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">Remove Block 4</p>
+        <div class="tog-switch">
+          <button class="tog-switch-button" id="RB4"></button>
+        </div>
+      </div>
+      <!--Remove Block 5 Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">Remove Block 5</p>
+        <div class="tog-switch">
+          <button class="tog-switch-button" id="RB5"></button>
+        </div>
+      </div>
+      <!--Remove Block 6 Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">Remove Block 6</p>
+        <div class="tog-switch">
+          <button class="tog-switch-button" id="RB6"></button>
+        </div>
+      </div>
+      <!--Remove Block 7 Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">Remove Block 7</p>
+        <div class="tog-switch">
+          <button class="tog-switch-button" id="RB7"></button>
+        </div>
+      </div>
+      <!--Remove Block 8 Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">Remove Block 8</p>
+        <div class="tog-switch">
+          <button class="tog-switch-button" id="RB8"></button>
+        </div>
+      </div>
+      <!--Remove Block 9 Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">Remove Block 9</p>
+        <div class="tog-switch">
+          <button class="tog-switch-button" id="RB9"></button>
+        </div>
+      </div>
+    </div>
+
+    <!--Advanced Settings Section-->
+    <div class="setting-div">
+      <p class="setting-title sub-setting-title">Advanced Settings</p>
+      <!--Add An Icon Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">Add An Icon</p>
+        <div class="tog-submit-div">
+          <input class="tog-submit-textbox" type="text" placeholder="URL">
+          <button class="tog-submit-button" id="AddNewIcon">Insert</button>
+        </div>
+      </div>
+      <!--Background Color Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">Background Color</p>
+        <input class="tog-input-box" id="BackgroundColor" type="text" placeholder="255, 255, 255">
+      </div>
+      <!--Set Background Image Setting-->
+      <div class="toggle-setting">
+        <p class="setting-title">Background Image</p>
+        <div class="tog-submit-div">
+          <input class="tog-submit-textbox" type="text" placeholder="URL">
+          <button class="tog-submit-button" id="SetBackground">Insert</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <p id="version-number">
+    V1.0.0
+  </p>
+  <div id="test-color-div"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
