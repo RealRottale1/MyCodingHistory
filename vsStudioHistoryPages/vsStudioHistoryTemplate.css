@@ -147,19 +147,15 @@ body {
     cursor: pointer;
 }
 
-#game_image {
-    border: 0px solid black;
+#game_image1, #game_image2 {
     padding: 0px;
     width: 825px;
     height: 425px;
-}
-
-#game_image {
     background-color: rgb(48, 48, 48);
     border: 2px solid rgb(77, 77, 77);
 }
 
-#play_button {
+#play_button1, #play_button2 {
     border: 0px solid black;
     position: relative;
     bottom: 100px;
