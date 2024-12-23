@@ -2,6 +2,10 @@
     white-space: nowrap;
 }
 
+canvas {
+    position: fixed;
+}
+
 body {
     margin: 0px;
     background-color: black;
@@ -230,4 +234,8 @@ body {
 
 .stretch_content {
     margin: 20px 0px 20px 0px;
+}
+
+.final_anchor {
+    margin-bottom: 25px;
 }

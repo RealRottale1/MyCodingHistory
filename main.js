@@ -162,21 +162,3 @@ async function handleBackground() {
 
 handleBackground();
 
-/*
-    <a href="./coolmath.html">My coolmath page</a>
-    <button onclick="
-        window.open('./scratchPages/scratchTemplate.html?pageID=0', '_self')">
-        Click To Test Scratch!
-    </button>
-
-    <button onclick="
-        window.open('./studioPages/studioTemplate.html?pageID=0', '_self')">
-        Click To Test Roblox!
-    </button>
-
-    <button onclick="
-        window.open('./vsStudioPages/vsStudioTemplate.html?pageID=0', '_self')">
-        Click To Test Visual Studio!
-    </button>
-
-*/
