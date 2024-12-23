@@ -15,7 +15,7 @@ async function handleBackground() {
     const minDotSize = 20;
     const maxDotSize = 30;
     const maxTTL = 500;
-    const canvasBackgroundColor = 'rgb(226, 207, 207)';
+    const canvasBackgroundColor = 'rgb(0, 0, 0)';
 
     const ctx = mainCanvas.getContext('2d');
     const dots = [];
@@ -24,11 +24,20 @@ async function handleBackground() {
     function resizeCanvas() {
         const zoomWidth = ((window.outerWidth - 10) / window.innerWidth);
         const zoomHeight = ((window.outerHeight - 10) / window.innerHeight);
+        const totalHeight = document.scrollHeight;
+
         mainCanvas.width = window.innerWidth*zoomWidth*canvasResolution;
-        console.log(mainCanvas.style.height);
-        mainCanvas.height = parseInt(mainCanvas.style.height.replace('%',''))+window.scrollY;
-    };//window.innerHeight*zoomHeight*canvasResolution+window.scrollY*canvasResolution;
+        mainCanvas.height = window.innerHeight*zoomHeight*canvasResolution;
+    };
     /*
+        const height = getComputedStyle(document.body).height.replace('px','');
+        console.log(height)
+        //mainCanvas.height = (height+window.scrollY > height ? height : height+window.scrollY);
+        //console.log(mainCanvas.height);
+        //console.log(getComputedStyle(document.body).height.replace('px','') + window.scrollY);
+
+        //window.innerHeight*zoomHeight*canvasResolution+window.scrollY*canvasResolution;
+
         const zoomWidth = ((window.outerWidth - 10) / window.innerWidth);
         const zoomHeight = ((window.outerHeight - 10) / window.innerHeight);
         const totalHeight = document.scrollHeight;
