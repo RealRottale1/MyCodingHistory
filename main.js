@@ -15,17 +15,28 @@ async function handleBackground() {
     const minDotSize = 20;
     const maxDotSize = 30;
     const maxTTL = 500;
-    const canvasBackgroundColor = 'rgb(0, 0, 0)';
+    const canvasBackgroundColor = 'rgb(226, 207, 207)';
 
     const ctx = mainCanvas.getContext('2d');
     const dots = [];
     const mousePosition = {x: 0, y: 0};
-    const zoom = ((window.outerWidth - 10) / window.innerWidth);
-    mainCanvas.width = window.innerWidth*zoom*canvasResolution;
-    mainCanvas.height = window.innerHeight*zoom*canvasResolution;
 
-    console.log(mainCanvas.height);
-    console.log(window.innerHeight*canvasResolution);
+    function resizeCanvas() {
+        const zoomWidth = ((window.outerWidth - 10) / window.innerWidth);
+        const zoomHeight = ((window.outerHeight - 10) / window.innerHeight);
+        mainCanvas.width = window.innerWidth*zoomWidth*canvasResolution;
+        console.log(mainCanvas.style.height);
+        mainCanvas.height = parseInt(mainCanvas.style.height.replace('%',''))+window.scrollY;
+    };//window.innerHeight*zoomHeight*canvasResolution+window.scrollY*canvasResolution;
+    /*
+        const zoomWidth = ((window.outerWidth - 10) / window.innerWidth);
+        const zoomHeight = ((window.outerHeight - 10) / window.innerHeight);
+        const totalHeight = document.scrollHeight;
+        console.log(totalHeight);
+        mainCanvas.width = window.innerWidth*zoomWidth*canvasResolution;
+        mainCanvas.height = window.innerHeight*zoomHeight*canvasResolution;
+    */
+
     function waitTick() {
         return new Promise((success) => {
             setTimeout(() => {
@@ -132,6 +143,7 @@ async function handleBackground() {
     }); 
 
     while (true) {
+        resizeCanvas();
         makeDot();
         renderCanvas();
         moveDots();

@@ -5,6 +5,7 @@
 body {
     margin: 0px;
     background-color: black;
+    height: 100%;
 }
 
 #title {
@@ -22,9 +23,9 @@ body {
 .main_section_div {
     display: flex;
     align-items: center;
-    justify-content: center;
-    align-content: center;
     justify-items: center;
+    align-content: center;
+    justify-content: center;
     position: absolute;
 }
 
@@ -40,6 +41,60 @@ body {
     width: 400px;
 }
 
+#s3 {
+    left: calc(50% - 200px);
+    top: 650px;
+    width: 400px;
+}
+
+#s4 {
+    left: calc(50% - 650px);
+    top: 900px;
+    width: 400px;
+}
+
+#s5 {
+    left: calc(50% + 250px);
+    top: 900px;
+    width: 400px;
+}
+
+#s6 {
+    left: calc(50% - 650px);
+    top: 1250px;
+    width: 400px;
+}
+
+#s7 {
+    left: calc(50% - 650px);
+    top: 1400px;
+    width: 400px;
+}
+
+#s8 {
+    left: calc(50% - 650px);
+    top: 1900px;
+    width: 400px;
+}
+
+#s9 {
+    left: calc(50% + 250px);
+    top: 1900px;
+    width: 400px;
+}
+
+#s10 {
+    left: calc(50% - 200px);
+    top: 2200px;
+    width: 400px;
+}
+
+#s11 {
+    left: calc(50% - 200px);
+    top: 2300px;
+    width: 400px;
+}
+
 .section_icon {
     width: 50px;
     height: 50px;
@@ -48,6 +103,12 @@ body {
     right: 92.5%;
     bottom: 50%;
 } 
+
+.big_section_icon {
+    width: 75px;
+    height: 75px;
+    right: 90%;
+}
 
 .section_text {
     margin: 0px;
@@ -73,11 +134,100 @@ body {
     -webkit-text-stroke: 0.5px rgb(255, 174, 0);
 }
 
-/*
+#studio_text {
+    color: rgb(0, 141, 224);
+    background-color: rgb(46, 48, 57);
+}
 
+#python_text {
+    color: #4B8BBE;
+    background-color: #FFE873; 
+}
 
-    <div class="section_content_div" id="c2">
-        <a class="single_line content_anchor" id="scratch_text" href="./scratchHistoryPages/scratchHistoryTemplate.html?pageID=0" target="_blank">Game1</a>
-        <a class="single_line content_anchor" id="scratch_text" href="./scratchHistoryPages/scratchHistoryTemplate.html?pageID=0" target="_blank">Game2</a>
-    </div>
-*/
+#java_text {
+    color: #f89820;
+    background-color: #26465c; 
+}
+
+#javascript_text {
+    color: #323330;
+    background-color: #F0DB4F; 
+}
+
+.section_content_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+}
+
+#c2 {
+    left: calc(50% - 125px);
+    top: 315px;
+    width: 250px;
+}
+
+#c3 {
+    left: calc(50% - 150px);
+    top: 715px;
+    width: 300px;
+}
+
+#c4 {
+    left: calc(50% - 550px);
+    top: 965px;
+    width: 200px;
+}
+
+#c5 {
+    left: calc(50% + 300px);
+    top: 965px;
+    width: 300px;
+}
+
+#c6 {
+    left: calc(50% - 550px);
+    top: 1315px;
+    width: 200px;
+}
+
+#c7 {
+    left: calc(50% - 600px);
+    top: 1465px;
+    width: 300px;
+}
+
+#c8 {
+    left: calc(50% - 625px);
+    top: 1965px;
+    width: 350px;
+}
+
+#c11 {
+    left: calc(50% - 175px);
+    top: 2365px;
+    width: 350px;
+}
+
+.content_anchor {
+    margin: 2.5px 0px 2.5px 0px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 25px;
+    text-decoration: none;
+    width: 100%;
+    padding: 5px 15px 5px 15px;
+    font-size: 30px;
+}
+
+.start_stretch_content {
+    margin: 40px 0px 20px 0px;
+}
+
+.stretch_content {
+    margin: 20px 0px 20px 0px;
+}
