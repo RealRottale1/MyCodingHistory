@@ -3,148 +3,81 @@
 }
 
 body {
-    margin: 0%;
-    background-color: rgb(19, 27, 41);
-}
-
-#title_cm {
-    border: 0px solid black;
-    height: 100px;
-    width: 100vw;
-    margin: 0%;
-    font-size: 75px;
-    text-align: center;
-    color: red;
-    background-color: rgb(29, 55, 82);
-    -webkit-text-stroke: 0.5px yellow;
-}
-
-#title_cm:hover {
-    cursor: pointer;
-}
-
-.row_1_cm, .row_2_cm {
-    display: flex;
-    justify-content: center;
-}
-
-.main_div_cm {
-    display: inline-block;
-}
-
-#competitors_cm {
-    margin: 25px 0px 25px 25px;
-    display: flexbox;
-    background-color: rgb(29, 55, 82);
-    width: 1000px;
-}
-
-#about_cm {
-    margin: 25px 0px 0px 25px;
-    display: flexbox;
-    background-color: rgb(29, 55, 82);
-    width: 1000px;
-}
-
-#now_cm {
-    margin: 25px 0px 0px 25px;
-    display: flexbox;
-    background-color: rgb(29, 55, 82);
-    width: 1000px;
-}
-
-.section_title_cm {
-    text-align: center;
     margin: 0px;
-    padding: 0px 50px 0px 50px;
-    font-size: 45px;
-    background-color: rgb(241, 219, 0);
+    background-color: black;
 }
 
-.section_body_cm {
-    text-align: center;
-    margin: 0px;
-    padding: 5px;
-    font-size: 35px;
-    background-color: rgb(28, 82, 125);
-    color: white;
-    word-wrap:break-word;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-}
-
-.game_display_cm {
-    margin: 25px 0px 0px 25px;
-    display: inline-block;
-    background-color: rgb(29, 55, 82);
-    width: 500px;
-}
-
-.game_image_cm {
-    height: 500px;
-    width: 500px;
-}
-
-.game_info_cm {
-    border: 0px solid black;
-    text-align: center;
-    margin: 0px;
-    padding: 5px;
-    font-size: 35px;
-    background-color: rgb(28, 82, 125);
-    color: white;
-    word-wrap:break-word;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    text-decoration: none;
-    width: 500px;
-}
-
-.game_info_cm:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-#ad_cm {
-    margin-left: 12.5px;
-    display: flexbox;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-    justify-content: center;
-}
-
-.ad {
-    position: relative;
-    margin: 25px 5px 5px 25px;
-    display: inline-block;
-    width: 300px;
-    height: 200px;
-}
-
-.ad_button {
-    width: 300px;
-    height: 200px;
-    padding: 0px;
-    border: 0px solid black;
-}
-
-.ad_button:hover {
-    cursor: pointer; 
-}
-
-.ad_img {
-    width: 300px;
-    height: 200px;
-}
-
-.ad_text {
+#title {
     margin: 0px;
     position: absolute;
-    color: black;
-    right: 0px;
-    bottom: 0px;
-    font-size: 25px;
-    background-color: rgb(241, 219, 0);
-    color: rgb(0, 0, 0);
+    left: calc(50% - 375px);
+    top: 25px;
+    width: 750px;
+    background-color: rgb(255, 255, 255);
+    font-size: 75px;
+    text-align: center;
+    border-radius: 25px;
 }
+
+.main_section_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    position: absolute;
+}
+
+#s1 {
+    left: calc(50% - 200px);
+    top: 150px;
+    width: 400px;
+}
+
+#s2 {
+    left: calc(50% - 200px);
+    top: 250px;
+    width: 400px;
+}
+
+.section_icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 99;
+    right: 92.5%;
+    bottom: 50%;
+} 
+
+.section_text {
+    margin: 0px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 25px;
+    text-decoration: none;
+    width: 100%;
+    padding: 5px 30px 5px 30px;
+    font-size: 45px;
+}
+
+#coolmath_text {
+    color: red;
+    background-color: rgb(29, 55, 82);
+    -webkit-text-stroke: 0.25px yellow;
+}
+
+#scratch_text {
+    color: rgb(255, 255, 255);
+    background-color: rgb(133, 92, 214);
+    -webkit-text-stroke: 0.5px rgb(255, 174, 0);
+}
+
+/*
+
+
+    <div class="section_content_div" id="c2">
+        <a class="single_line content_anchor" id="scratch_text" href="./scratchHistoryPages/scratchHistoryTemplate.html?pageID=0" target="_blank">Game1</a>
+        <a class="single_line content_anchor" id="scratch_text" href="./scratchHistoryPages/scratchHistoryTemplate.html?pageID=0" target="_blank">Game2</a>
+    </div>
+*/

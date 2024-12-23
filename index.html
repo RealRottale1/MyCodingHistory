@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./ma">
+    <link rel="stylesheet" href="./main.css">
     <title>Christopher's Programming Journy</title>
 </head>
 <body>
-    <a href="./coolmath.html">My coolmath page</a>
-    <button onclick="
-        window.open('./scratchPages/scratchTemplate.html?pageID=0', '_self')">
-        Click To Test Scratch!
-    </button>
+    <canvas id="background_canvas" style="width: 100%; height: 100%;"></canvas>
 
-    <button onclick="
-        window.open('./studioPages/studioTemplate.html?pageID=0', '_self')">
-        Click To Test Roblox!
-    </button>
+    <p class="single_line" id="title">My Coding History</p>
+    
+    <div class="main_section_div" id="s1">
+        <img class="section_icon" src="https://www.coolmathgames.com/pwa/images/icon-512x512.png" alt="section icon">
+        <a class="single_line section_text" id="coolmath_text" href="./coolMath/coolmath.html" target="_blank">Coolmath Games</a>
+    </div>
 
-    <button onclick="
-        window.open('./vsStudioPages/vsStudioTemplate.html?pageID=0', '_self')">
-        Click To Test Visual Studio!
-    </button>
+    <div class="main_section_div" id="s2">
+        <img class="section_icon" src="./images/scratchLogo.png" alt="section icon">
+        <a class="single_line section_text" id="scratch_text" href="./scratchHistoryPages/scratchHistoryTemplate.html?pageID=0" target="_blank">Early Scratch</a>
+    </div>
+
+
     <script src="main.js"></script>
 </body>
 </html>
