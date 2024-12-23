@@ -133,17 +133,23 @@ body {
 }
 
 #importance_description {
-    height: 250px;
-    width: 1900px;
+    height: 325px;
+    width: 1000px;
 }
 
-#game_display_div {
+#game_display_div1 {
     position: absolute;
     top: 167.5px;
     left: 1175px;
 }
 
-#play_button:hover {
+#game_display_div2 {
+    position: absolute;
+    top: 617.5px;
+    left: 1175px;
+}
+
+#play_button1:hover, #play_button2:hover {
     cursor: pointer;
 }
 
@@ -164,7 +170,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
 }
 
-#click_play {
+#click_play1, #click_play2 {
     margin: 0px;
     position: relative;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;

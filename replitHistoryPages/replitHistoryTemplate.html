@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replit Project</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="https://replit.com//public/icons/favicon-prompt-192.png">
+    <link rel="stylesheet" href="./replitHistoryTemplate.css">
+</head>
+<body>
+    <ul id="top_bar">
+        <li class="li_img">
+            <button id="home_button" onclick="window.open('https://replit.com/~', '_blank')">
+                <img class="img_item" src="../images/homeIcon.png" alt="home icon">
+            </button>
+        </li>
+        <li class="li_img">
+            <button id="code_button">
+                <img class="img_item" id="code_icon" src="" alt="code icon">
+            </button>
+        </li>
+        <li class="single_line" id="project_name">
+            Project Name
+        </li>
+        <li id="run_tab">
+            <div id="run_button">
+                <img id="run_img" src="https://assets-global.website-files.com/608c3e96a193d648703be6ba/60ae6ff57f551ad24ce966fc_play-button-arrowhead.svg" alt="run icon">
+                <p id="run_text">Run</p>
+            </div>
+            <img id="run_dropdown" src="https://www.svgrepo.com/download/509905/dropdown-arrow.svg" alt="drop down icon">
+        </li>
+        <li class="li_img">
+            <img class="img_item" id="search_icon" src="../images/searchIcon2.png" alt="search icon">
+        </li>
+        <li class="li_img">
+            <img class="img_item" id="bell_icon" src="../images/bellIcon.png" alt="search icon">
+        </li>
+        <li id="star_icon">*</li>
+    </ul>
+
+    <div id="about_div">
+        <p id="about_title">About</p>
+        <p id="about_description"></p>
+    </div>
+
+    <div id="importance_div">
+        <p id="importance_title">Importance</p>
+        <p id="importance_description"></p>
+    </div>
+
+    <div id="image_div1">
+        <img id="image1" src="../images/battleIsland.png" alt="image1">
+        <button id="image_button1">
+            Open
+        </button>
+    </div>
+
+    <div id="image_div2">
+        <img id="image2" src="../images/battleIsland.png" alt="image2">
+        <button id="image_button2">
+            Open
+        </button>
+    </div>
+
+    <script src="./replitHistoryTemplateLoader.js"></script>
+</body>
+</html>
