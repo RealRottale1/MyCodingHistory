@@ -2,6 +2,10 @@
     white-space: nowrap;
 }
 
+p {
+    font-family: Proxima-Soft-Bold, sans-serif;
+}
+
 body {
     margin: 0%;
     background-color: rgb(19, 27, 41);
@@ -26,6 +30,10 @@ body {
 .row_1_cm, .row_2_cm {
     display: flex;
     justify-content: center;
+}
+
+.row_2_cm {
+    margin-bottom: 25px;
 }
 
 .main_div_cm {
@@ -61,7 +69,7 @@ body {
     background-color: rgb(241, 219, 0);
 }
 
-.section_body_cm {
+.section_body_cm, .big_section_body_cm {
     text-align: center;
     margin: 0px;
     padding: 5px;
@@ -73,11 +81,16 @@ body {
     overflow-wrap: break-word;
 }
 
+.big_section_body_cm {
+    height: 200px;
+}
+
 .game_display_cm {
     margin: 25px 0px 0px 25px;
     display: inline-block;
     background-color: rgb(29, 55, 82);
     width: 500px;
+    height: fit-content;
 }
 
 .game_image_cm {

@@ -1,6 +1,20 @@
 
 const mainCanvas = document.getElementById('background_canvas');
 
+const starContent = document.getElementsByClassName('star_anchor');
+const starContentLength = starContent.length;
+for (let i = 0; i < starContentLength; i++) {
+    const star = starContent[i];
+    const starIcon = document.createElement('img');
+    starIcon.src = './images/starIcon.png';
+    starIcon.style.position = 'absolute';
+    starIcon.style.bottom = '65%';
+    starIcon.style.left = '95%';
+    starIcon.style.width = '25px';
+    starIcon.style.height = '25px';
+    star.append(starIcon);
+};
+
 
 
 async function handleBackground() {
@@ -24,27 +38,9 @@ async function handleBackground() {
     function resizeCanvas() {
         const zoomWidth = ((window.outerWidth - 10) / window.innerWidth);
         const zoomHeight = ((window.outerHeight - 10) / window.innerHeight);
-        const totalHeight = document.scrollHeight;
-
         mainCanvas.width = window.innerWidth*zoomWidth*canvasResolution;
         mainCanvas.height = window.innerHeight*zoomHeight*canvasResolution;
     };
-    /*
-        const height = getComputedStyle(document.body).height.replace('px','');
-        console.log(height)
-        //mainCanvas.height = (height+window.scrollY > height ? height : height+window.scrollY);
-        //console.log(mainCanvas.height);
-        //console.log(getComputedStyle(document.body).height.replace('px','') + window.scrollY);
-
-        //window.innerHeight*zoomHeight*canvasResolution+window.scrollY*canvasResolution;
-
-        const zoomWidth = ((window.outerWidth - 10) / window.innerWidth);
-        const zoomHeight = ((window.outerHeight - 10) / window.innerHeight);
-        const totalHeight = document.scrollHeight;
-        console.log(totalHeight);
-        mainCanvas.width = window.innerWidth*zoomWidth*canvasResolution;
-        mainCanvas.height = window.innerHeight*zoomHeight*canvasResolution;
-    */
 
     function waitTick() {
         return new Promise((success) => {
@@ -143,8 +139,9 @@ async function handleBackground() {
     });
 
     mainCanvas.addEventListener('mousemove', function(event) {
-        mousePosition.x = mainCanvas.width*(event.clientX/window.innerWidth);
-        mousePosition.y = mainCanvas.height*(event.clientY/window.innerHeight);
+        const rect = mainCanvas.getBoundingClientRect();
+        mousePosition.x = (event.clientX - rect.left) * (mainCanvas.width / rect.width);
+        mousePosition.y = (event.clientY - rect.top) * (mainCanvas.height / rect.height);
     });
 
     mainCanvas.addEventListener('mouseleave', function() {

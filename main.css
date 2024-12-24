@@ -18,7 +18,7 @@ body {
     left: calc(50% - 375px);
     top: 25px;
     width: 750px;
-    background-color: rgb(255, 255, 255);
+    background-color: #Ffd700;
     font-size: 75px;
     text-align: center;
     border-radius: 25px;
@@ -95,7 +95,7 @@ body {
 
 #s11 {
     left: calc(50% - 200px);
-    top: 2300px;
+    top: 2325px;
     width: 400px;
 }
 
@@ -129,28 +129,33 @@ body {
 #coolmath_text {
     color: red;
     background-color: rgb(29, 55, 82);
-    -webkit-text-stroke: 0.25px yellow;
+    -webkit-text-stroke: 0.5px yellow;
+    font-family: Proxima-Soft-Bold, sans-serif;
 }
 
 #scratch_text {
     color: rgb(255, 255, 255);
     background-color: rgb(133, 92, 214);
     -webkit-text-stroke: 0.5px rgb(255, 174, 0);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #studio_text {
     color: rgb(0, 141, 224);
     background-color: rgb(46, 48, 57);
+    font-family: Builder Sans, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
 }
 
 #python_text {
     color: #4B8BBE;
     background-color: #FFE873; 
+    font-family: SourceSansProBold, Arial, sans-serif;
 }
 
 #java_text {
     color: #f89820;
     background-color: #26465c; 
+    font-family: "OracleSansVF", "OracleSansVFCyGr", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
 }
 
 #javascript_text {
@@ -172,48 +177,56 @@ body {
     left: calc(50% - 125px);
     top: 315px;
     width: 250px;
+    font-size: 30px;
 }
 
 #c3 {
     left: calc(50% - 150px);
     top: 715px;
     width: 300px;
+    font-size: 30px;
 }
 
 #c4 {
     left: calc(50% - 550px);
     top: 965px;
     width: 200px;
+    font-size: 30px;
 }
 
 #c5 {
     left: calc(50% + 300px);
     top: 965px;
     width: 300px;
+    font-size: 30px;
 }
 
 #c6 {
     left: calc(50% - 550px);
     top: 1315px;
     width: 200px;
+    font-size: 30px;
 }
 
 #c7 {
     left: calc(50% - 600px);
     top: 1465px;
     width: 300px;
+    font-size: 28px;
 }
 
 #c8 {
     left: calc(50% - 625px);
     top: 1965px;
     width: 350px;
+    font-size: 24px;
 }
 
 #c11 {
     left: calc(50% - 175px);
-    top: 2365px;
+    top: 2390px;
     width: 350px;
+    font-size: 30px;
 }
 
 .content_anchor {
@@ -225,15 +238,14 @@ body {
     text-decoration: none;
     width: 100%;
     padding: 5px 15px 5px 15px;
-    font-size: 30px;
 }
 
 .start_stretch_content {
-    margin: 40px 0px 20px 0px;
+    margin: 42px 0px 20px 0px;
 }
 
 .stretch_content {
-    margin: 20px 0px 20px 0px;
+    margin: 21px 0px 21px 0px;
 }
 
 .final_anchor {
