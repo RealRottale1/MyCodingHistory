@@ -5,9 +5,9 @@ const templateData = {
         iconLink: 'https://www.python.org/about/',
         about: 'During the first two years of high school, I attended a Python 1 and Python 2 class. In these classes I not only learned how to program in Python, but I also earned two certifications showing my knowledge of Python.',
         importance: 'Learning Python helped make the jump from Luau to Java very smooth. Learning Python also made it easier for me to learn other programming languages in general (like JavaScript).',
-        firstImage: 'https://media.licdn.com/dms/image/v2/D4E2DAQGJQFDJu4mnvQ/profile-treasury-document-cover-images_480/profile-treasury-document-cover-images_480/0/1731586502129?e=1735570800&v=beta&t=fQNlz5b3zPCwKhGmhTX4MdCkIcGbSJkvgRhezbcG08c',
+        firstImage: '../images/itsCert.png',
         firstLink: 'https://www.linkedin.com/in/christopher-markham-782645329/details/certifications/1731586515692/single-media-viewer/?type=DOCUMENT&profileId=ACoAAFLawhIBcSM23AneUXqIZLwycDOa7eib0Tc',
-        secondImage: 'https://media.licdn.com/dms/image/v2/D4E2DAQHZfkgClYyjVA/profile-treasury-document-cover-images_480/profile-treasury-document-cover-images_480/0/1731586375921?e=1735570800&v=beta&t=Uv_j9kKvInxF6k05ZEsk_bCIUtXYtW1P5ZISsKxVnak',
+        secondImage: '../images/pcapCert.png',
         secondLink: 'https://www.linkedin.com/in/christopher-markham-782645329/details/certifications/1731586382184/single-media-viewer/?profileId=ACoAAFLawhIBcSM23AneUXqIZLwycDOa7eib0Tc',
     },
     '1': {
