@@ -27,6 +27,34 @@ const templateData = {
         importance: 'This project is important because it was one of my first projects I made where I had to really focus on optimization. The way the code works is by generating and testing random multipliers until it finds one that works. This takes a long time which is why I had to take optimization into account when making this project.',
         playPage: '../chemistryBalancing/index.html',
     },
+    '4': {
+        name: 'Chemistry Auto Balancer',
+        image: '../images/cppChemistryAutoBalancer.png',
+        description: 'This project is very similar to the JavaScript version I made. The main difference between the two is that the C++ version is slightly faster.',
+        importance: 'This project is important because it was my first C++ project. Similarly to how I learned JavaScript, I decided to dive straight into the depths of C++.',
+        playPage: 'https://www.programiz.com/online-compiler/0TjSF6gMgWHb8',
+    },
+    '5': {
+        name: 'Pig Latin Converter',
+        image: '../images/pigLatinConverter.png',
+        description: 'This project allows a user to convert plain text into Pig Latin. It can convert multiple paragraphs of text in mere milliseconds thanks to its use of multithreading.',
+        importance: 'This project is important because it was my first ever to use multithreading. This project is especially important because it was my second C++ project, which made my professional implementation of multithreading even more impressive.',
+        playPage: 'https://www.programiz.com/online-compiler/6apVJFNNoexSF',
+    },
+    '6': {
+        name: 'Roman Numerals Converter',
+        image: '../images/romanNumeralConverter.png',
+        description: 'This project allows a user to convert numbers to Roman numerals and Roman numerals to numbers. The program also detects invalid Roman numerals.',
+        importance: 'This project is important because it highlights my growth as a programmer. I made a similar converter in Python about 1-2 years prior. I improved my code in every way, making it faster and safer (checks if input is valid).',
+        playPage: 'https://www.programiz.com/online-compiler/6apVJFNNoexSF',
+    },
+    '7': {
+        name: 'Tic Tac Toe',
+        image: '../images/cppTicTacToe.png',
+        description: 'This project allows a user to play tic-tac-toe against a bot.',
+        importance: 'This project is important because it was my first project to ever utilize a bot to allow a user to play a two-player game by themself.',
+        playPage: 'https://www.programiz.com/online-compiler/9tHwDYoiBM4BD',
+    },
 };
 
 let pageID = window.location.search.replace('?pageID=','');
