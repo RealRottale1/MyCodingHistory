@@ -55,6 +55,27 @@ const templateData = {
         importance: 'This project is important because it was my first project to ever utilize a bot to allow a user to play a two-player game by themself.',
         playPage: 'https://www.programiz.com/online-compiler/9tHwDYoiBM4BD',
     },
+    '8': {
+        name: 'Mouse Maze',
+        image: '../images/mouseMaze.png',
+        description: 'This project allows a user to create a maze for a mouse to complete. The mouse uses the A-star pathfinding algorithm to navigate through the maze.',
+        importance: 'This project is important because it was my first project to use pointers, which are variables that point to a memory address. Pointers are a very complex and hard to learn topic so me utilizing it is impressive.',
+        playPage: 'https://www.programiz.com/online-compiler/7TjS9RfhjWSaw',
+    },
+    '9': {
+        name: 'Square Intersection',
+        image: '../images/squareIntersects.png',
+        description: 'This project allows a user to check if two two-dimensional squares intersect each other.',
+        importance: 'This project is important because it exemplifies my programming growth. Not only does this project utilize pointers, but the way I went about checking intersections is unique and quite complex.',
+        playPage: 'https://www.programiz.com/online-compiler/10nFRo8KnUgxh',
+    },
+    '10': {
+        name: 'Calculator',
+        image: '../images/calculator.png',
+        description: 'This project is a fully working calculator that allows for all normal math operations (+, -, *, /, ^) and also allows for the use of parentheses.',
+        importance: 'This project is important because it is by far one of, if not the most, complex codes I have ever made. This is mainly the case because of the parenthesies which takes about 80% of the code to handle.',
+        playPage: 'https://www.programiz.com/online-compiler/1kNDdmtPBAiKs',
+    },
 };
 
 let pageID = window.location.search.replace('?pageID=','');
