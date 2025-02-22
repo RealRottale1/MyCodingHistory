@@ -20,6 +20,13 @@ const templateData = {
         importance: 'This game is important for two main reasons. The first reason is that I wrote this code in a very professional way (using semicolons, single quotes, and camel case). The second reason being that this was my first game to use an HTML canvas, which allowed me to render the graphics without having to use HTML or CSS. This game is also really big (just short of 5,000 lines of code).',
         playPage: '../redBattleUndyingCopy/index.html',
     },
+    '3': {
+        name: 'Chemistry Auto Balancer',
+        image: '../images/chemistryAutoBalancer.png',
+        description: 'This project was created to solve chemistry balancing equations. It is able to identify the components of a yeild equation and generate a multiplier which satisfies the equation.',
+        importance: 'This project is important because it was one of my first projects I made where I had to really focus on optimization. The way the code works is by generating and testing random multipliers until it finds one that works. This takes a long time which is why I had to take optimization into account when making this project.',
+        playPage: '../chemistryBalancing/index.html',
+    },
 };
 
 let pageID = window.location.search.replace('?pageID=','');
