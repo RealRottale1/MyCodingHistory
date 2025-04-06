@@ -73,8 +73,15 @@ const templateData = {
         name: 'Calculator',
         image: '../images/calculator.png',
         description: 'This project is a fully working calculator that allows for all normal math operations (+, -, *, /, ^) and also allows for the use of parentheses.',
-        importance: 'This project is important because it is by far one of, if not the most, complex codes I have ever made. This is mainly the case because of the parenthesies which takes about 80% of the code to handle.',
+        importance: 'This project is important because it is by far one of, if not the most, complex codes I have ever made. This is mainly the case because of the parenthesies system which takes about 80% of the code.',
         playPage: 'https://www.programiz.com/online-compiler/1kNDdmtPBAiKs',
+    },
+    '11': {
+        name: '4 In A Row',
+        image: '../images/fourInARow.png',
+        description: 'This project is a fully working four-in-a-row game where you play against a bot. The bot is very advanced, so winning will be a challenge.',
+        importance: 'This project is important because it was my first ever project to include an advanced algorithm/bot. Not only can the bot play four in a row really well, but it can also predict the player\'s next move, giving it an advantage on where to play its next piece.',
+        playPage: 'https://www.programiz.com/online-compiler/178bblxedOHVg',
     },
 };
 

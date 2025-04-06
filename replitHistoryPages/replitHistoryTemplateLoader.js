@@ -15,7 +15,7 @@ const templateData = {
         icon: 'https://storage.googleapis.com/replit/images/1664475636706_4242518983fa1131df568c361d7dc030.jpeg',
         iconLink: 'https://www.java.com/en/download/help/whatis_java.html',
         about: 'During my junior year of high school, I decided that I wanted to learn other programming languages besides Luau and Python. I decided I would dip my toes into Java. I am by no means an expert at Java, but I am somewhat fluent with its syntax.',
-        importance: 'Learning Java made learning JavaScript extremely easy, as Java and JavaScript share a lot of components. The games to the right are the only two Java games I made (those being Minesweeper and Sudoku).',
+        importance: 'Learning Java made learning JavaScript extremely easy, as Java and JavaScript share a lot of components. The games to the right are the only two Java games I have made so far (those being Minesweeper and Sudoku).',
         firstImage: '../images/minesweeper.png',
         firstLink: 'https://replit.com/@CAMarkham/Minesweeper',
         secondImage: '../images/sudoku.png',

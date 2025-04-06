@@ -17,6 +17,13 @@ const templateData = {
         secondImage: '../images/calculator.png',
         secondLink: 'https://www.programiz.com/online-compiler/1kNDdmtPBAiKs',
     },
+    '2': {
+        pointName: 'React Native',
+        description: 'At the start of my junior year of high school, I joined the Ready Set App (RSA) club at my school. The point of the club is to create a mobile app that solves a problem that affects the local community. My group decided to make an app that would allow users to report and search for lost items. My group also decided to use React Native to build the app, as it would allow the app to work on both Android and iOS. React Native is very similar to JavaScript, which made learning the language easy.',
+        importance: 'Making an app from scratch using React Native not only taught me how to make mobile apps but also how to implement many mobile phone features such as the camera and location. I also learned how to implement a database into a project, which I had never done prior to making this app. Overall, using React Native taught me many important programming skills, especially if I decide to get into mobile app development.',
+        firstImage: '../images/lafApp2.png',
+        secondImage: '../images/lafApp.png',
+    },
 };
 
 let pageID = window.location.search.replace('?pageID=','');
@@ -38,10 +45,15 @@ gameImage2.src = templateData[pageID].secondImage;
 aboutDescription.textContent = templateData[pageID].description;
 aboutImportance.textContent = templateData[pageID].importance;
 
-playGameButton1.addEventListener('click', function() {
-    window.open(templateData[pageID].firstLink, '_blank');
-});
-
-playGameButton2.addEventListener('click', function() {
-    window.open(templateData[pageID].secondLink, '_blank');
-});
+if (!templateData[pageID].firstLink && !templateData[pageID].secondLink) {
+    playGameButton1.style.display = "none";
+    playGameButton2.style.display = "none";
+} else {
+    playGameButton1.addEventListener('click', function() {
+        window.open(templateData[pageID].firstLink, '_blank');
+    });
+    
+    playGameButton2.addEventListener('click', function() {
+        window.open(templateData[pageID].secondLink, '_blank');
+    });    
+}
