@@ -1,7 +1,7 @@
 const templateData = {
     '0': {
         name: 'Python',
-        icon: 'https://storage.googleapis.com/replit/images/1664475603315_1442b3c69cc612aff6ef60cce0c69328.jpeg',
+        icon: '../images/replitPythonIcon.jpg',
         iconLink: 'https://www.python.org/about/',
         about: 'During the first two years of high school, I attended a Python 1 and Python 2 class. In these classes I not only learned how to program in Python, but I also earned two certifications showing my knowledge of Python.',
         importance: 'Learning Python helped make the jump from Luau to Java very smooth. Learning Python also made it easier for me to learn other programming languages in general (like JavaScript).',
@@ -12,7 +12,7 @@ const templateData = {
     },
     '1': {
         name: 'Java',
-        icon: 'https://storage.googleapis.com/replit/images/1664475636706_4242518983fa1131df568c361d7dc030.jpeg',
+        icon: '../images/replitJavaIcon.jpg',
         iconLink: 'https://www.java.com/en/download/help/whatis_java.html',
         about: 'During my junior year of high school, I decided that I wanted to learn other programming languages besides Luau and Python. I decided I would dip my toes into Java. I am by no means an expert at Java, but I am somewhat fluent with its syntax.',
         importance: 'Learning Java made learning JavaScript extremely easy, as Java and JavaScript share a lot of components. The games to the right are the only two Java games I have made so far (those being Minesweeper and Sudoku).',

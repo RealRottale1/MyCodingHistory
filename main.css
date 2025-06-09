@@ -111,6 +111,12 @@ body {
     width: 400px;
 }
 
+#s14 {
+    left: calc(50% - 200px);
+    top: 3125px;
+    width: 400px;
+}
+
 .section_icon {
     width: 50px;
     height: 50px;
@@ -186,6 +192,12 @@ body {
     font-family: "Helvetica";
 }
 
+#rust_text {
+    color: #ab6c48;
+    background-color: #2f333a; 
+    font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+}
+
 .section_content_div {
     display: flex;
     flex-direction: column;
@@ -255,6 +267,13 @@ body {
 #c12 {
     left: calc(50% - 175px);
     top: 2690px;
+    width: 350px;
+    font-size: 30px;
+}
+
+#c14 {
+    left: calc(50% - 175px);
+    top: 3190px;
     width: 350px;
     font-size: 30px;
 }
