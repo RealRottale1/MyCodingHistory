@@ -1,7 +1,7 @@
 const templateData = {
     '0': {
         pointName: 'Early JavaScript',
-        description: 'As of right now this time period is still on going. This time period started upon the creation of Tic Tac Toe ULTRA.',
+        description: 'This time period is between the creation of Tic Tac Toe ULTRA and the creation of Red Battle Undying. This time period is defined by my rapid accumulation of knowledge in regard to GUI and web-based applications.',
         importance: 'This time period is important for many reasons. The first reason being that this is my first time using a markup language (HTML and CSS). The second reason being that this was my first time ever creating a game from scratch (no pre made engine).',
         firstImage: '../images/ticTacToeULTRA.png',
         firstLink: '../ticTacToeCopy/index.html',
@@ -10,12 +10,12 @@ const templateData = {
     },
     '1': {
         pointName: 'Early C++',
-        description: 'As of right now this time period is still on going. This time period started upon the creation of Chemistry Auto Balancer.',
+        description: 'This time period is between the creation of the Chemistry Auto Balancer and the creation of the 4 In A Row game. This time period is defined by a rapid growth in my programming knowledge, mainly in regard to the nature of statically typed programming languages (like C++). In this period I also found interesting ways to utilize my coding expertise in forms other than just games, like, for example, my Roman Numerals Converter or my Pig Latin Converter.',
         importance: 'This time period is important for many reasons. The first being that I learned many advanced programming concepts like pointers and multithreading. The second reason why this time period is important is because it saw me add C++ to the list of programming languages that I have mastered. Usually mastering a language takes me a few months, if not a year; however, I was able to master C++ in under two months.',
         firstImage: '../images/cppChemistryAutoBalancer.png',
         firstLink: 'https://www.programiz.com/online-compiler/0TjSF6gMgWHb8',
-        secondImage: '../images/calculator.png',
-        secondLink: 'https://www.programiz.com/online-compiler/1kNDdmtPBAiKs',
+        secondImage: '../images/fourInARow.png',
+        secondLink: 'https://www.programiz.com/online-compiler/178bblxedOHVg',
     },
     '2': {
         pointName: 'React Native',

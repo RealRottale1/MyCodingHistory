@@ -21,6 +21,17 @@ const templateData = {
         secondImage: '../images/sudoku.png',
         secondLink: 'https://replit.com/@CAMarkham/Sudoku',
     },
+    '2': {
+        name: 'Rust',
+        icon: '../images/replitRustIcon.jpg',
+        iconLink: 'https://www.rust-lang.org/',
+        about: 'During my junior year of high school, I decided that I wanted to learn other programming languages besides Luau and Python. I decided I would dip my toes into Java. I am by no means an expert at Java, but I am somewhat fluent with its syntax.',
+        importance: 'Learning Java made learning JavaScript extremely easy, as Java and JavaScript share a lot of components. The games to the right are the only two Java games I have made so far (those being Minesweeper and Sudoku).',
+        firstImage: '../images/ticTacToeRust.png',
+        firstLink: 'https://replit.com/@CAMarkham/All-Rust-Creations?v=1#src/main.rs',
+        secondImage: '../images/mouseMazeP.png',
+        secondLink: 'https://replit.com/@CAMarkham/All-Rust-Creations?v=1#src/main.rs',
+    },
 };
 
 let pageID = window.location.search.replace('?pageID=','');

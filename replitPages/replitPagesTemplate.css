@@ -46,6 +46,8 @@ body {
 }
 
 #project_name {
+    position: absolute;
+    left: 150px;
     margin: 27.5px 0px 0px 50px;
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 45px;
@@ -53,7 +55,7 @@ body {
 
 #run_tab {
     position: relative;
-    left: 650px;
+    left: 750px;
     display: flex;
     border-radius: 12.5%;
     margin: 12.5px 0px 0px 0px;
@@ -90,7 +92,7 @@ body {
 
 #search_icon, #bell_icon, #star_icon {
     position: relative;
-    left: 1325px;
+    left: 1425px;
 }
 
 #about_div {
