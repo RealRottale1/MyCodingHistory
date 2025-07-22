@@ -25,7 +25,7 @@ const templateData = {
         name: 'Rust',
         icon: '../images/replitRustIcon.jpg',
         iconLink: 'https://www.rust-lang.org/',
-        about: 'This time period is still ongoing but started with the creation of Tic Tac Toe.',
+        about: 'This time period is between the creation of Tic Tac Toe and Mouse Maze (Version P). This time period is defined by my growth in knowledge outside of the C family and would eventually lead me to learning other programming languages like Swift.',
         importance: 'This time period is very important because it allowed me to expand my programming knowledge outside of the C family (C++, Java, and JavaScript). While Rust shares some core concepts and features with the C family, it is noticeably different, which greatly expanded my ability to pick up and learn new and unique programming languages. Learning Rust also allowed me to learn a lot more about references, which play a vital role in programming.',
         firstImage: '../images/ticTacToeRust.png',
         firstLink: 'https://replit.com/@CAMarkham/All-Rust-Creations?v=1#src/main.rs',
