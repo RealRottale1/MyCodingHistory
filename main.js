@@ -11,9 +11,21 @@ function setUpStar(star) {
     starIcon.style.transition = "0.25s";
     star.append(starIcon);
     return starIcon;
-}
+} 
+const singleLines = document.querySelectorAll('.single_line');
+const observer = new IntersectionObserver(function(lines) {
+    for (let line of lines) {
+        if (line.isIntersecting) {
+            line.target.style.transition = "0.25s";
+            line.target.style.transform = "scale(1)";
+        } else {
+            line.target.style.transform = "scale(0.75)";
+        }
+    }
+})
+singleLines.forEach(line => observer.observe(line));
 
-for (let line of document.getElementsByClassName('single_line')) {
+for (let line of singleLines) {
     const star = line.classList.contains("star_anchor") ? setUpStar(line) : null;
     const mainIcon = line.parentElement.querySelector(".section_icon");
     if (mainIcon) {mainIcon.style.transition = "0.25s"};
@@ -35,7 +47,6 @@ async function handleBackground() {
     let mousePositionUpdated = false;
     let useMouse = false;
 
-    const maxCanvasSize = 4000;
     const canvasResolution = 5;
     const tickRate = 100;
     const minDotSpeed = 10;
@@ -77,7 +88,8 @@ async function handleBackground() {
             const dot = dots[i];
             ctx.beginPath();
             ctx.fillStyle = dot.color;
-            ctx.rect(dot.position.x - dot.size, dot.position.y - dot.size, dot.size, dot.size);
+            ctx.arc(dot.position.x - dot.size, dot.position.y - dot.size, dot.size/2, 0, Math.PI*2)
+            //ctx.rect(dot.position.x - dot.size, dot.position.y - dot.size, dot.size, dot.size);
             ctx.fill();
             ctx.closePath();
         };
