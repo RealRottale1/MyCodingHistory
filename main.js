@@ -1,10 +1,6 @@
-
 const mainCanvas = document.getElementById('background_canvas');
 
-const starContent = document.getElementsByClassName('star_anchor');
-const starContentLength = starContent.length;
-for (let i = 0; i < starContentLength; i++) {
-    const star = starContent[i];
+function setUpStar(star) {
     const starIcon = document.createElement('img');
     starIcon.src = './images/starIcon.png';
     starIcon.style.position = 'absolute';
@@ -12,7 +8,25 @@ for (let i = 0; i < starContentLength; i++) {
     starIcon.style.left = '95%';
     starIcon.style.width = '25px';
     starIcon.style.height = '25px';
+    starIcon.style.transition = "0.25s";
     star.append(starIcon);
+    return starIcon;
+}
+
+for (let line of document.getElementsByClassName('single_line')) {
+    const star = line.classList.contains("star_anchor") ? setUpStar(line) : null;
+    const mainIcon = line.parentElement.querySelector(".section_icon");
+    if (mainIcon) {mainIcon.style.transition = "0.25s"};
+    line.addEventListener('mouseenter', function() {
+        if (star) {star.style.transform = "rotate(12.5deg)"};
+        if (mainIcon) {mainIcon.style.transform = "rotate(-12.5deg)"};
+        line.style.filter = "brightness(1.125)";
+    });
+    line.addEventListener('mouseleave', function() {
+        if (star) {star.style.transform = "rotate(0deg)"};
+        if (mainIcon) {mainIcon.style.transform = "rotate(0deg)"};
+        line.style.filter = "brightness(1)";
+    });
 };
 
 
