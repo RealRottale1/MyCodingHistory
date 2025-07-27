@@ -88,7 +88,7 @@ const templateData = {
         image: '../images/ticTacToeSwift.png',
         description: 'This project is a Swift port of a Rust port of the C++ version of Tic Tac Toe that I made. In it you can play a bot in Tic Tac Toe.',
         importance: "This project is important because it was the first Swift program I ever made. This project familiarized me with Swift's syntax, which is more relaxed than C++ but more strict than JavaScript.",
-        playPage: 'https://www.programiz.com/online-compiler/8xlw88KDEryjo',
+        playPage: 'https://www.programiz.com/online-compiler/73eKhRiwHJCDr',
     },
     '13': {
         name: 'Word Ladder',
