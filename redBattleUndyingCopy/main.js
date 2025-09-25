@@ -2674,8 +2674,8 @@ class aldrin extends goblin {
         this.fullHealth = gameTextures.aldrinFullHealth;
         this.halfHealth = gameTextures.aldrinHalfHealth;
         this.nearDeath = gameTextures.aldrinNearDeath;
-        this.starterHealth = 2//30000; // 10,000
-        this.health = 2//30000;
+        this.starterHealth = 30000;
+        this.health = 30000;
         this.currentWeapon = 'sword';
         this.weaponData = new weaponHands;
         this.bowData = null;
