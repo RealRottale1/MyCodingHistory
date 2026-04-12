@@ -1,3 +1,5 @@
+// Works on https://minesweeperonline.com/
+
 const mainWindow = document.getElementById("game");
 if (!mainWindow) {console.warn("Unable to find [game]!");}
 const faceButton = document.getElementById("face");

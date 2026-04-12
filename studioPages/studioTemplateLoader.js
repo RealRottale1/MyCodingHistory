@@ -125,7 +125,22 @@ const templateData = {
         importance: "This is by far the most complex video game I have ever made. This game has a fully dynamic 3D rendering shop, a daily reward system, over 38 different minigames, a plinko machine, exclusive VIP and premium benefits, multiple monetization methods, a game pass gifting system, a music system linked with the game's status, and a dynamic auto patching/updating data system that allows for easy data structure reform. This game was also my first game to utilize module scripts and is overall a very professional game.",
         playPage: 'https://www.roblox.com/games/18475941513/Protect-The-Server',
     },
+    '18': {
+        name: '2 Player SQL Tycoon',
+        image: '../images/twoPlayerSQLTycoon.webp',
+        description: 'In this game, you play as a CS student at the wonderful campus of WECIB. Team up with a partner and grow your own SQL Tycoon. Buy buildings, decorations, upgrades, and weapons. Defend your tycoon from wannabe hoodlums or become a rascal and steal from your enemies.',
+        importance: "This game is important to me because it contains lots of inside references and jokes only a fellow WECIB student would get. While this game might not be as flashy or impressive as some of my other works, this game is deeply and emotionally connected to me. That being said, this game boasts a large amount of optimization work, which allows 8 massive tycoons to run simultaneously without causing too much lag. Everything from the individual models to the conveyor belts to even how old SQL is reused is designed to maximize performance.",
+        playPage: 'https://www.roblox.com/games/76145832324692/2-Player-SQL-Tycoon',
+    },
+    '19': {
+        name: '+1 Jump For Brainrot',
+        image: '../images/plusOneJumpForBrainRot.webp',
+        description: 'In this game you jump your way up a variety of steepening staircases. At the top of each staircase is a brainrot character, which you can redeem for wins. Using these wins, you unlock new brainrot pets, which boost your jump height. Use cash to buy items that help you progress up the towers.',
+        importance: `This game was initially designed to catch the lightning in a bottle that was my Skibidi Toilet Roleplay game; however, along development, I entered it into my classes' game jam under the category of "consecutive." While the game ultimately failed to gain traction, it won me the "best presentation" award in the game jam.`,
+        playPage: 'https://www.roblox.com/games/130364630258190/1-Jump-For-Brainrot',
+    },
 };
+
 
 let pageID = window.location.search.replace('?pageID=','');
 if (!templateData[pageID]) {

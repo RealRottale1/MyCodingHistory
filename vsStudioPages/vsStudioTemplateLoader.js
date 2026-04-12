@@ -160,6 +160,27 @@ const templateData = {
         importance: 'This project is important because it highlights my focus on efficiency. All aspects of my code were painfully thought through in order to ensure the code worked as optimally and efficiently as possible. For example, I used sets as often as I could because they have O(1) time for search compared to arrays, which have O(n) time for search.',
         playPage: 'https://github.com/RealRottale1/Playground/tree/main/SwiftCreations/hangmanHelper',
     },
+    '23': {
+        name: 'Red Battle: Battle For Lyrinth',
+        image: '../images/redBattleLyrinth.png',
+        description: "Decades before the events seen in Red Battle: Undying, the land of Lyrinth would see its first major war since the War of Power. In this game you can simulate the first battle of Lyrinth. Challenge your friends or go in solo and see if you can defend or capture the land of Lyrinth. Each race has a multitude of different units, each with their own weapons and abilities. You can also edit the terrain to simulate different battle fronts. And don't worry, the bosses and mini-bosses are included!",
+        importance: 'This project is very important for a multitude of reasons. The first being that it is my very first game to be entirely rendered and run in a canvas (meaning absolutely NO HTML elements). This means that all the buttons and menus in the game were made by me. The second reason why this project is important is because it houses my most advanced pathfinding code yet. It is a modified A* algorithm that chains together similar units to avoid having to pathfind the entire map.',
+        playPage: '../BattleForLyrinth/index.html',
+    },
+    '24': {
+        name: 'Minesweeper Solver (Lite)',
+        image: '../images/minesweeperSolver.png',
+        description: "Ever wanted to beat Minesweeper real fast to impress your friend who can beat expert mode with ease? Well maybe that's just me, but this script allows you to beat basic (low mine count) boards almost instantly. It was so good at its job that I got IP banned from the official Minesweeper page for using it. To run the script, just open inspect element, paste the script, set the size of the board, and hit enter.",
+        importance: 'While this script is good at beating basic Minesweeper levels, it almost always fails to beat normal to expert levels, as they require better logical reasoning to detect safe and unsafe positions. This issue was fixed in my Plus version, which makes the code faster and capable of better logical thinking.',
+        playPage: 'https://github.com/RealRottale1/MyCodingHistory/blob/main/mineSweeper/lowDensityMineSweeper.js',
+    },
+    '25': {
+        name: 'Minesweeper Solver (Plus)',
+        image: '../images/minsweeperSolverPlus.png',
+        description: "Unlike my Minesweeper solver (basic), this script won't leave you unsatisfied! Applying some of the principles of set reduction, I was able to give the script an advanced ability to locate both safe and unsafe tiles where the basic script could not. To run the script just insert it into the console and press enter.",
+        importance: 'This project is important for a multitude of different reasons. The first being that it showed me just how much I can improve a script in a short time. My original script (the basic one) was written just one day before I wrote this one. In that one day I made my script faster and smarter. The second reason why this project is important is because it can actually beat expert Minesweeper levels with about 25% accuracy.',
+        playPage: 'https://github.com/RealRottale1/MyCodingHistory/blob/main/mineSweeper/highDensityMineSweeper.js',
+    },
 };
 
 let pageID = window.location.search.replace('?pageID=','');

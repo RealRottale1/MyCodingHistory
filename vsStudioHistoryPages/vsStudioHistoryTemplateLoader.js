@@ -26,7 +26,7 @@ const templateData = {
     },
     '3': {
         pointName: 'Swift',
-        description: 'This time period is between the creation of Tic Tac Toe and the creation of Hangman Helper. This time period is defined by its heavy use of algorithms. Prior to this time period,, algorithms like BFS and DFS had never been used in my code. This time period is also defined by a large improvement on older ideas. For example,, both the calculator and chemistry auto balancer were heavily improved, both in terms of speed and efficiency.',
+        description: 'This time period is between the creation of Tic Tac Toe and the creation of Hangman Helper. This time period is defined by its heavy use of algorithms. Prior to this time period,, algorithms like BFS and DFS had never been used in my code. This time period is also defined by a large improvement on older ideas. For example, both the calculator and chemistry auto balancer were heavily improved, both in terms of speed and efficiency.',
         importance: 'This time period is important because it showed me the power of algorithms in making fast and efficient projects. A perfect example of this would be my "Better Chemistry Auto Balancer," which, unlike its predecessors, solves the equations almost instantly and has no integer limit. This period also taught me how to make algorithms like BFS, DFS, Dijkstra, and many more.',
         firstImage: '../images/TicTacToeSwift.png',
         firstLink: 'https://www.programiz.com/online-compiler/0TjSF6gMgWHb8',
@@ -35,12 +35,12 @@ const templateData = {
     },
     '4': {
         pointName: 'Senior Year',
-        description: 'This time period is between the creation of Tic Tac Toe and the creation of Hangman Helper. This time period is defined by its heavy use of algorithms. Prior to this time period,, algorithms like BFS and DFS had never been used in my code. This time period is also defined by a large improvement on older ideas. For example,, both the calculator and chemistry auto balancer were heavily improved, both in terms of speed and efficiency.',
-        importance: 'This time period is important because it showed me the power of algorithms in making fast and efficient projects. A perfect example of this would be my "Better Chemistry Auto Balancer," which, unlike its predecessors, solves the equations almost instantly and has no integer limit. This period also taught me how to make algorithms like BFS, DFS, Dijkstra, and many more.',
+        description: 'This time period took place during my senior year of high school. This time period is mostly defined by my desire to leave behind a legacy, specifically projects I will be remembered for at my school for years to come.',
+        importance: "This period is important to me because it marks my final year in school. Furthermore, it will stand to contrast my next life journey, that being college, and the many, many programming opportunities that come with it. It is still very unreal to me just how much work and progress I have done in just 18 years.",
         firstImage: '../images/redBattleLyrinth.png',
         firstLink: '../BattleForLyrinth/index.html',
-        secondImage: '../images/hangmanHelper.png',
-        secondLink: 'https://github.com/RealRottale1/Playground/tree/main/SwiftCreations/hangmanHelper',
+        secondImage: '../images/minsweeperSolverPlus.png',
+        secondLink: 'https://github.com/RealRottale1/MyCodingHistory/blob/main/mineSweeper/lowDensityMineSweeper.js',
     },
 };
 
