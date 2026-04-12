@@ -6,6 +6,46 @@ canvas {
     position: fixed;
 }
 
+.profiles_div {
+    background-color: #1d1800;
+    position: fixed;
+    
+    width: fit-content;
+    max-width: 90%;
+    height: auto;
+    
+    right: 1%;
+    bottom: 0;
+
+    z-index: 99999;
+    border: 3px solid rgb(23, 19, 0);
+    border-radius: 12.5px;
+
+    /* Layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile_icon {
+    width: 3vw;
+    min-width: 30px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+.profile_icon:hover {
+    transform: rotate(-15deg); 
+    filter: brightness(120%); 
+}
+
 body {
     margin: 0px;
     background-color: black;

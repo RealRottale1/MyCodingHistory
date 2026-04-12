@@ -41,6 +41,15 @@ for (let line of singleLines) {
     });
 };
 
+document.getElementById("scratchProfileButton").addEventListener('click', function() {
+    window.open("https://scratch.mit.edu/users/LES-CAM/", '_blank');
+});
+document.getElementById("robloxProfileButton").addEventListener('click', function() {
+    window.open("https://www.roblox.com/users/589811664/profile", '_blank');
+});
+document.getElementById("githubProfileButton").addEventListener('click', function() {
+    window.open("https://github.com/RealRottale1", '_blank');
+});
 
 
 async function handleBackground() {
