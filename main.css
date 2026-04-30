@@ -159,13 +159,13 @@ body {
 
 #s15 {
     left: calc(50% - 200px);
-    top: 3575px;
+    top: 3570px;
     width: 400px;
 }
 
 #s16 {
     left: calc(50% - 200px);
-    top: 4235px;
+    top: 4275px;
     width: 400px;
 }
 
@@ -351,7 +351,7 @@ body {
 
 #c16 {
     left: calc(50% - 175px);
-    top: 4300px;
+    top: 4340px;
     width: 350px;
     font-size: 30px;
 }

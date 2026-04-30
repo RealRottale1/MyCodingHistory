@@ -168,13 +168,20 @@ const templateData = {
         playPage: '../BattleForLyrinth/index.html',
     },
     '24': {
+        name: 'MNot Wecib MC Simulator',
+        image: '../images/notWECIBMCSimulator.png',
+        description: "In this game you try to play Minecraft in class without getting caught. Toggle between gaming with the space bar. Gaming in front of students gains you aura, while gaming in front of teachers gets you killed. Can you get the highest score?",
+        importance: 'This game is important to me because it showed me how combining my own programming skills with AI programming tools can allow me to create projects faster. I was able to get this game up and running within just a couple of hours.',
+        playPage: '../NotWECIBMCSimulator/index.html',
+    },
+    '25': {
         name: 'Minesweeper Solver (Lite)',
         image: '../images/minesweeperSolver.png',
         description: "Ever wanted to beat Minesweeper real fast to impress your friend who can beat expert mode with ease? Well maybe that's just me, but this script allows you to beat basic (low mine count) boards almost instantly. It was so good at its job that I got IP banned from the official Minesweeper page for using it. To run the script, just open inspect element, paste the script, set the size of the board, and hit enter.",
         importance: 'While this script is good at beating basic Minesweeper levels, it almost always fails to beat normal to expert levels, as they require better logical reasoning to detect safe and unsafe positions. This issue was fixed in my Plus version, which makes the code faster and capable of better logical thinking.',
         playPage: 'https://github.com/RealRottale1/MyCodingHistory/blob/main/mineSweeper/lowDensityMineSweeper.js',
     },
-    '25': {
+    '26': {
         name: 'Minesweeper Solver (Plus)',
         image: '../images/minsweeperSolverPlus.png',
         description: "Unlike my Minesweeper solver (basic), this script won't leave you unsatisfied! Applying some of the principles of set reduction, I was able to give the script an advanced ability to locate both safe and unsafe tiles where the basic script could not. To run the script just insert it into the console and press enter.",
