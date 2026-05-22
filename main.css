@@ -169,6 +169,12 @@ body {
     width: 400px;
 }
 
+#s17 {
+    left: calc(50% - 650px);
+    top: 2262.5px;
+    width: 400px;
+}
+
 .section_icon {
     width: 50px;
     height: 50px;
@@ -260,6 +266,12 @@ body {
     color: #B9D2DC;
     background-color: #002678; 
         font-family: SourceSansProBold, Arial, sans-serif;
+}
+
+#github_text {
+    color: #ffffff;
+    background-color: #212830; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .section_content_div {
