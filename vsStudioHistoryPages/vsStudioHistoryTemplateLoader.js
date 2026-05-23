@@ -42,6 +42,15 @@ const templateData = {
         secondImage: '../images/minsweeperSolverPlus.png',
         secondLink: 'https://github.com/RealRottale1/MyCodingHistory/blob/main/mineSweeper/lowDensityMineSweeper.js',
     },
+    '5': {
+        pointName: 'Playground',
+        description: 'This time period is defined by my very first utilization and implementation of GitHub. Prior to this, I had never used GitHub.',
+        importance: "This period is very important because it served as a launching point for me to dive into other languages. Furthermore, this was my first time ever using GitHub, which plays a major role in the workforce.",
+        firstImage: '../images/githubProfile.png',
+        firstLink: 'https://github.com/RealRottale1',
+        secondImage: '../images/playground.png',
+        secondLink: 'https://github.com/RealRottale1/Playground',
+    }
 };
 
 let pageID = window.location.search.replace('?pageID=','');
