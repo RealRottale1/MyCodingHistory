@@ -175,6 +175,12 @@ body {
     width: 400px;
 }
 
+#s18 {
+    left: calc(50% - 200px);
+    top: 4620px;
+    width: 400px;
+}
+
 .section_icon {
     width: 50px;
     height: 50px;
@@ -265,7 +271,13 @@ body {
 #senior_year_text {
     color: #B9D2DC;
     background-color: #002678; 
-        font-family: SourceSansProBold, Arial, sans-serif;
+    font-family: SourceSansProBold, Arial, sans-serif;
+}
+
+#charlotte_text {
+    color: #005035;
+    background-color: #a49665; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
 #github_text {
@@ -367,6 +379,14 @@ body {
     width: 350px;
     font-size: 30px;
 }
+
+#c18 {
+    left: calc(50% - 175px);
+    top: 4687.5px;
+    width: 350px;
+    font-size: 30px;
+}
+
 
 .content_anchor {
     margin: 2.5px 0px 2.5px 0px;
