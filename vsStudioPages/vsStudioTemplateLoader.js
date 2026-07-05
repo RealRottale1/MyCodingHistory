@@ -290,10 +290,10 @@ const templateData = {
     },
     '41': {
         name: 'Word Analysis',
-        image: '../images/minsweeperSolverPlus.png',
+        image: '../images/WordAnalysis.png',
         description: "This program can analyze the frequency and size of all words in a given text file. It is also capable (with modification) of providing an autofill system as a result of its core structure coming from a tri-node structure.",
         importance: 'This project is extremely important to me because it shows my mastery of complex data structures. I utilized a combination of a trienode structure along with a variety of different linked lists to efficiently sort and organize data.',
-        playPage: 'https:https://github.com/RealRottale1/Playground/blob/main/Lyrinth_Lore/WordAnalysis.c',
+        playPage: 'https://github.com/RealRottale1/Playground/blob/main/Lyrinth_Lore/WordAnalysis.c',
     },
 };
 

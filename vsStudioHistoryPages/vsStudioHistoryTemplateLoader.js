@@ -50,6 +50,15 @@ const templateData = {
         firstLink: 'https://github.com/RealRottale1',
         secondImage: '../images/playground.png',
         secondLink: 'https://github.com/RealRottale1/Playground',
+    },
+    '6': {
+        pointName: 'UNC Charlotte Prep',
+        description: 'Once summer began and I registered for my first UNC Charlotte classes, I wanted to ensure I would excel in my computer science classes. This time period is a result of that desire and is mainly defined by my use of advanced data structures and languages.',
+        importance: "This period is very important because it introduced me to a variety of different data structures like linked list and binary trees. This period is also important because it was my first time ever using C or assembly which I will need to know at UNC Charlotte.",
+        firstImage: '../images/MazeAlgorithmJava.png',
+        firstLink: 'https://github.com/RealRottale1/Playground/blob/main/UNCCharlottePrep/MazeAlgorithm.java',
+        secondImage: '../images/WordAnalysis.png',
+        secondLink: 'https://github.com/RealRottale1/Playground/blob/main/Lyrinth_Lore/WordAnalysis.c',
     }
 };
 
