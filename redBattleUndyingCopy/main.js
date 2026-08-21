@@ -3904,26 +3904,48 @@ function handleShop() {
 
     return new Promise((results) => {
         const SelectedGear = [null, null];
+        const myCurrentLevel = settings.currentLevel;
         for (let i = 0; i < 4; i++) {
             const useGear = useShopGear[i];
             const useShopButton = shopOptions[i + 1];
             const useIndex = ((i < 2) ? 0 : 1);
             let mouseOver = false;
-            useShopButton.addEventListener('mouseenter', function () {
+
+            function onEnter() {
+                if (settings.currentLevel != myCurrentLevel) {
+                    removeEventListener('mouseenter', onEnter);
+                    removeEventListener('mouseleave', onLeave);
+                    removeEventListener('click', onClick);
+                    return;
+                }
                 if (SelectedGear[useIndex] != useShopGear[i]) {
                     mouseOver = true;
                     useShopButton.style.backgroundColor = 'rgb(175, 130, 96)';
                     useShopButton.style.border = '2.5px solid rgb(84, 52, 27)';
                 };
-            });
-            useShopButton.addEventListener('mouseleave', function () {
+            };
+
+            function onLeave() {
+                if (settings.currentLevel != myCurrentLevel) {
+                    removeEventListener('mouseenter', onEnter);
+                    removeEventListener('mouseleave', onLeave);
+                    removeEventListener('click', onClick);
+                    return;
+                }
                 if (SelectedGear[useIndex] != useShopGear[i]) {
                     mouseOver = false;
                     useShopButton.style.backgroundColor = 'rgb(207, 156, 116)';
                     useShopButton.style.border = '2.5px solid rgb(138, 93, 59)';
                 };
-            });
-            useShopButton.addEventListener('click', function () {
+            };
+
+            function onClick() {
+                if (settings.currentLevel != myCurrentLevel) {
+                    removeEventListener('mouseenter', onEnter);
+                    removeEventListener('mouseleave', onLeave);
+                    removeEventListener('click', onClick);
+                    return;
+                }
                 if (SelectedGear[useIndex] != useShopGear[i]) {
                     const oppIndex = (!(i - (useIndex * 2)) + (useIndex * 2));
                     if (SelectedGear[useIndex] == useShopGear[oppIndex]) {
@@ -3944,7 +3966,11 @@ function handleShop() {
                         useShopButton.style.borderColor = 'rgb(84, 52, 27)';
                     };
                 };
-            });
+            };
+
+            useShopButton.addEventListener('mouseenter', onEnter);
+            useShopButton.addEventListener('mouseleave', onLeave);
+            useShopButton.addEventListener('click', onClick);
         };
         shopOptions[0].addEventListener('click', function () {
             if (SelectedGear[0]) {
