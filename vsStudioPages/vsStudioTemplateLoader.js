@@ -163,7 +163,7 @@ const templateData = {
     '23': {
         name: 'Red Battle: Battle For Lyrinth',
         image: '../images/redBattleLyrinth.png',
-        description: "Decadestle: Undying, the land of Lyrinth would see its first major war since the War of Power. In this game you can simulate the first battle of Lyrinth. Challenge your friends or go in solo and see if you can defend or capture the land of Lyrinth. Each race has a multitude of different units, each with their own weapons and abilities. You can also edit the terrain to simulate different battle fronts. And don't worry, the bosses and mini-bosses are included!",
+        description: "Decades before Red Battle Undying, the land of Lyrinth would see its first major war since the War of Power. In this game you can simulate the first battle of Lyrinth. Challenge your friends or go in solo and see if you can defend or capture the land of Lyrinth. Each race has a multitude of different units, each with their own weapons and abilities. You can also edit the terrain to simulate different battle fronts. And don't worry, the bosses and mini-bosses are included!",
         importance: 'This project is very important for a multitude of reasons. The first being that it is my very first game to be entirely rendered and run in a canvas (meaning absolutely NO HTML elements). This means that all the buttons and menus in the game were made by me. The second reason why this project is important is because it houses my most advanced pathfinding code yet. It is a modified A* algorithm that chains together similar units to avoid having to pathfind the entire map.',
         playPage: '../BattleForLyrinth/index.html',
     },
