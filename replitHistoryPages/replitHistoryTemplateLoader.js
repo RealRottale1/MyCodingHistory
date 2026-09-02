@@ -67,3 +67,63 @@ playGameButton1.addEventListener('click', function() {
 playGameButton2.addEventListener('click', function() {
     window.open(templateData[pageID].secondLink, '_blank');
 });
+
+
+const gameDisplayDiv1 = document.getElementById("image_div1");
+const gameDisplayDiv2 = document.getElementById("image_div2")
+const searchIcon = document.getElementById("search_icon");
+const bellIcon = document.getElementById("bell_icon");
+const starIcon = document.getElementById("star_icon");
+
+function updateGUIElements() {
+    const dynamicWidth = window.innerWidth;
+    if (dynamicWidth < 1600) {
+        searchIcon.style.display = "none";
+        bellIcon.style.display = "none";
+        starIcon.style.display = "none";
+        aboutDescription.style.width = "650px";
+        aboutDescription.style.height = "400px";
+        gameImage1.style.width = "625px";
+        gameImage1.style.height = "375px";
+        gameImage2.style.width = "625px";
+        gameImage2.style.height = "375px";
+        gameDisplayDiv1.style.left = "800px";
+        gameDisplayDiv1.style.width = "625px";
+        gameDisplayDiv1.style.height = "375px";
+        gameDisplayDiv2.style.left = "800px";
+        gameDisplayDiv2.style.width = "625px";
+        gameDisplayDiv2.style.height = "375px";
+        aboutImportance.style.width = "700px";
+        //aboutImportance.style.height = "550px";
+        aboutDescription.style.fontSize = "28px";
+        aboutImportance.style.fontSize = "28px";
+    } else {
+        searchIcon.style.display = "block";
+        bellIcon.style.display = "block";
+        starIcon.style.display = "block";
+        aboutDescription.style.width = "1000px";
+        aboutDescription.style.height = "350px";
+        gameImage1.style.width = "700px";
+        gameImage1.style.height = "400px";
+        gameImage2.style.width = "700px";
+        gameImage2.style.height = "400px";
+        gameDisplayDiv1.style.left = "1300px";
+        gameDisplayDiv1.style.width = "700px";
+        gameDisplayDiv1.style.height = "400px";
+        gameDisplayDiv2.style.left = "1300px";
+        gameDisplayDiv2.style.width = "700px";
+        gameDisplayDiv2.style.height = "400px";
+        aboutImportance.style.width = "1125px";
+        aboutImportance.style.height = "305px";
+        aboutDescription.style.fontSize = "35px";
+        aboutImportance.style.fontSize = "35px";
+    }
+
+}
+
+window.addEventListener('resize', () => {
+    updateGUIElements();
+});
+
+
+updateGUIElements();

@@ -202,13 +202,18 @@ body {
     border: 1px gray solid;
 }
 
+.parent-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+}
+
 #game_text {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
     color: rgb(0, 0, 0);
     position: relative;
     margin: 0px;
-    left: 150px;
+    left: calc(50% - 250px);
     bottom: 100px;
     height: 90px;
     width: 500px;

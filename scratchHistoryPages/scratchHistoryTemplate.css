@@ -188,12 +188,12 @@ body {
 
 #game_1 {
     top: 175px;
-    left: 1400px;
+    left: 1300px;
 }
 
 #game_2 {
     top: 612.5px;
-    left: 1400px; 
+    left: 1300px; 
 }
 
 #first_game, #second_game {
@@ -233,7 +233,7 @@ body {
     color: rgb(0, 0, 0);
     position: relative;
     margin: 0px;
-    left: 75px;
+    left: calc(50% - 150px);
     bottom: 75px;
     height: 60px;
     width: 300px;

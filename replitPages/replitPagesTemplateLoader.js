@@ -90,3 +90,48 @@ codeButton.addEventListener('click', function() {
 playGameButton1.addEventListener('click', function() {
     window.open(templateData[pageID].link, '_blank');
 });
+
+const gameDisplayDiv = document.getElementById("image_div1");
+const searchIcon = document.getElementById("search_icon");
+const bellIcon = document.getElementById("bell_icon");
+const starIcon = document.getElementById("star_icon");
+const image1 = document.getElementById("image1");
+
+function updateGUIElements() {
+    const dynamicWidth = window.innerWidth;
+    if (dynamicWidth < 1600) {
+        searchIcon.style.display = "none";
+        bellIcon.style.display = "none";
+        starIcon.style.display = "none";
+        aboutDescription.style.width = "650px";
+        aboutDescription.style.height = "400px";
+        gameDisplayDiv.style.left = "800px";
+        image1.style.width = "625px";
+        image1.style.height = "375px";
+        gameDisplayDiv.style.width = "625px";
+        gameDisplayDiv.style.height = "375px";
+        aboutImportance.style.width = "1400px";
+        aboutDescription.style.fontSize = "28px";
+    } else {
+        searchIcon.style.display = "block";
+        bellIcon.style.display = "block";
+        starIcon.style.display = "block";
+        aboutDescription.style.width = "1000px";
+        aboutDescription.style.height = "350px";
+        gameDisplayDiv.style.left = "1300px";
+        image1.style.width = "700px";
+        image1.style.height = "400px";
+        gameDisplayDiv.style.width = "700px";
+        gameDisplayDiv.style.height = "400px";
+        aboutImportance.style.width = "1925px";
+        aboutDescription.style.fontSize = "35px";
+    }
+
+}
+
+window.addEventListener('resize', () => {
+    updateGUIElements();
+});
+
+
+updateGUIElements();

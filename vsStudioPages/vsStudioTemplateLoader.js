@@ -316,3 +316,45 @@ aboutImportance.textContent = templateData[pageID].importance;
 playGameButton.addEventListener('click', function() {
     window.open(templateData[pageID].playPage, '_blank');
 });
+
+const arrowButtons = document.getElementById("arrow_buttons");
+const fakeTabs = document.getElementsByClassName("fake_tab");
+const gameDisplayDiv = document.getElementById("game_display_div");
+const importanceDiv = document.getElementById("importance_div");
+const optionsDiv = document.getElementById("options");
+
+function updateGUIElements() {
+    const dynamicWidth = window.innerWidth;
+    if (dynamicWidth < 1600) {
+        aboutDescription.style.width = "650px";
+        aboutDescription.style.height = "400px";
+        importanceDiv.style.top = "250px";
+        gameDisplayDiv.style.left = "800px";
+        gameImage.style.width = "625px";
+        gameImage.style.height = "375px";
+        arrowButtons.style.display = "none";
+        optionsDiv.style.display = "none";
+        aboutImportance.style.width = "1350px";
+    } else {
+        aboutDescription.style.width = "1000px";
+        aboutDescription.style.height = "450px";
+        importanceDiv.style.top = "350px";
+        gameDisplayDiv.style.left = "1175px";
+        gameImage.style.width = "825px";
+        gameImage.style.height = "425px";
+        arrowButtons.style.display = "block";
+        optionsDiv.style.display = "block";
+        aboutImportance.style.width = "1900px";
+    }
+
+    for (let i = 0; i < fakeTabs.length; i++) {
+        fakeTabs[i].style.display = (dynamicWidth < 1300) ? "none" : "block";
+    }
+}
+
+window.addEventListener('resize', () => {
+    updateGUIElements();
+});
+
+
+updateGUIElements();

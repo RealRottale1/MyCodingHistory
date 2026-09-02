@@ -74,3 +74,43 @@ seeGame1.addEventListener('click', function() {
 seeGame2.addEventListener('click', function() {
     window.open(templateData[pageID].secondLink+'editor/', '_blank');
 });
+
+const aboutDiv = document.getElementById('about');
+const importanceDiv = document.getElementById('importance');
+const game1 = document.getElementById('game_1');
+const game2 = document.getElementById('game_2');
+
+function updateGUIElements() {
+    const dynamicWidth = window.innerWidth;
+    if (dynamicWidth < 1600) {
+        aboutDiv.style.left = "75px";
+        aboutDiv.style.top = "75px";
+        importanceDiv.style.left = "75px";
+        importanceDiv.style.top = "275px";
+        aboutDescription.style.width = "850px";
+        aboutDescription.style.height = "275px";
+        aboutImportance.style.width = "850px";
+        aboutImportance.style.height = "250px";
+        game1.style.left = "1050px";
+        game2.style.left = "1050px";
+    } else {
+        aboutDiv.style.left = "150px";
+        aboutDiv.style.top = "100px";
+        importanceDiv.style.left = "150px";
+        importanceDiv.style.top = "280px";
+        aboutDescription.style.width = "1000px";
+        aboutDescription.style.height = "250px";
+        aboutImportance.style.width = "1000px";
+        aboutImportance.style.height = "250px";
+        game1.style.left = "1300px";
+        game2.style.left = "1300px";
+    }
+
+}
+
+window.addEventListener('resize', () => {
+    updateGUIElements();
+});
+
+
+updateGUIElements();

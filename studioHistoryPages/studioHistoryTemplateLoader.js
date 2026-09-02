@@ -47,6 +47,7 @@ if (!templateData[pageID]) {
     pageID = '0';
 };
 
+const gameName = document.getElementById('game_name');
 const aboutTitle = document.getElementById('about_title');
 const aboutDiv = document.getElementById('about');
 const aboutDescription = document.getElementById('about_description');
@@ -59,6 +60,7 @@ const secondName = document.getElementById('game_title2');
 const game2Image = document.getElementById('gameplay2_img');
 const playGame2 = document.getElementById('play_button2');
 
+gameName.textContent = templateData[pageID].pointName;
 aboutTitle.textContent = templateData[pageID].pointName;
 aboutDescription.textContent = templateData[pageID].description;
 aboutImportance.textContent = templateData[pageID].importance;
@@ -94,3 +96,21 @@ if (templateData[pageID].secondName) {
     const game1 = document.getElementById('game1');
     game1.style.top = '255px';
 };
+
+const mainDiv = document.getElementById('main');
+
+function updateGUIElements() {
+    const dynamicWidth = window.innerWidth;
+    if (dynamicWidth < 1600) {
+        mainDiv.style.left = "75px";
+    } else {
+        mainDiv.style.left = "250px";
+    }
+
+}
+
+window.addEventListener('resize', () => {
+    updateGUIElements();
+});
+
+updateGUIElements();

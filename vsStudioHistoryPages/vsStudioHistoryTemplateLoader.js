@@ -95,3 +95,62 @@ if (!templateData[pageID].firstLink && !templateData[pageID].secondLink) {
         window.open(templateData[pageID].secondLink, '_blank');
     });    
 }
+
+
+const arrowButtons = document.getElementById("arrow_buttons");
+const fakeTabs = document.getElementsByClassName("fake_tab");
+const gameDisplayDiv1 = document.getElementById("game_display_div1");
+const gameDisplayDiv2 = document.getElementById("game_display_div2");
+const importanceDiv = document.getElementById("importance_div");
+const optionsDiv = document.getElementById("options");
+const aboutDiv = document.getElementById("about_div");
+
+function updateGUIElements() {
+    const dynamicWidth = window.innerWidth;
+    if (dynamicWidth < 1600) {
+        aboutDiv.style.left = "50px";
+        importanceDiv.style.left = "50px";
+        aboutDescription.style.width = "800px";
+        aboutDescription.style.height = "400px";
+        aboutDescription.style.fontSize = "28px";
+        importanceDiv.style.top = "250px";
+        gameDisplayDiv1.style.left = "900px";
+        gameDisplayDiv2.style.left = "900px";
+        gameImage1.style.width = "625px";
+        gameImage1.style.height = "375px";
+        gameImage2.style.width = "625px";
+        gameImage2.style.height = "375px";
+        arrowButtons.style.display = "none";
+        optionsDiv.style.display = "none";
+        aboutImportance.style.width = "800px";
+        aboutImportance.style.fontSize = "28px";
+    } else {
+        aboutDiv.style.left = "100px";
+        importanceDiv.style.left = "100px";
+        aboutDescription.style.width = "1000px";
+        aboutDescription.style.height = "450px";
+        aboutDescription.style.fontSize = "35px";
+        importanceDiv.style.top = "350px";
+        gameDisplayDiv1.style.left = "1175px";
+        gameDisplayDiv2.style.left = "1175px";
+        gameImage1.style.width = "825px";
+        gameImage1.style.height = "425px";
+        gameImage2.style.width = "825px";
+        gameImage2.style.height = "425px";
+        arrowButtons.style.display = "block";
+        optionsDiv.style.display = "block";
+        aboutImportance.style.width = "1000px";
+        aboutImportance.style.fontSize = "35px";
+    }
+
+    for (let i = 0; i < fakeTabs.length; i++) {
+        fakeTabs[i].style.display = (dynamicWidth < 1300) ? "none" : "block";
+    }
+}
+
+window.addEventListener('resize', () => {
+    updateGUIElements();
+});
+
+
+updateGUIElements();

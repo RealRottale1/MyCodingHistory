@@ -116,7 +116,7 @@ const templateData = {
         image: '../images/skibidiToiletRoleplay.png',
         description: 'In this game you can morph into your favorite characters from the skibidi universe and skibidi multiverse and explore the lore-accurate world.',
         importance: "This game is important because it showed me that making video games is a viable career path (as proven by me making, in total, 2,700 USD off of this game). This game also made me a master at making models in Roblox Studio (professional level). This game taught me many things, like how to make custom playable characters, monetize my games, save and load player data in a safe and long-term format, deal with lots of pressure and an unending deadline, and how to ensure customer satisfaction.",
-        playPage: 'https://www.roblox.com/games/15029105106/NEW-TITAN-Skibidi-Toilet-Roleplay',
+        playPage: 'https://www.roblox.com/communities/33227066/The-Roleplay-Industry#!/about', // Rest in peace https://www.roblox.com/games/15029105106/NEW-TITAN-Skibidi-Toilet-Roleplay
     },
     '17': {
         name: 'Protect The Server',
@@ -177,3 +177,23 @@ aboutImportance.textContent = templateData[pageID].importance;
 playGameButton.addEventListener('click', function() {
     window.open(templateData[pageID].playPage, '_blank');
 });
+
+const mainDiv = document.getElementById('main');
+
+function updateGUIElements() {
+    const dynamicWidth = window.innerWidth;
+    if (dynamicWidth < 1600) {
+        mainDiv.style.left = "75px";
+        aboutImportance.style.width = "1350px";
+    } else {
+        mainDiv.style.left = "250px";
+        aboutImportance.style.width = "1450px";
+    }
+
+}
+
+window.addEventListener('resize', () => {
+    updateGUIElements();
+});
+
+updateGUIElements();

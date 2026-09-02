@@ -142,11 +142,12 @@ body {
 }
 
 #image_button1 {
+    position: absolute;
     margin: 0px;
     position: relative;
-    left: 50px;
+    left: calc(50% - 250px);
     bottom: 75px;
-    width: 600px;
+    width: 500px;
     height: 50px;
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 30px;

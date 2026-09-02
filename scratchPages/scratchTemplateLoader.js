@@ -158,3 +158,45 @@ playGameButton.addEventListener('click', function() {
 seeGameButton.addEventListener('click', function() {
     window.open(templateData[pageID].playPage+'editor/', '_blank');
 });
+
+const gameText = document.getElementById('game_text');
+const aboutDiv = document.getElementById('about');
+const importanceDiv = document.getElementById('importance');
+
+function updateGUIElements() {
+    const dynamicWidth = window.innerWidth;
+    if (dynamicWidth < 1600) {
+        seeGameButton.style.left = "1250px";
+        seeGameButton.style.top = "65px";
+        aboutDiv.style.left = "800px";
+        aboutDiv.style.top = "50px";
+        importanceDiv.style.left = "800px";
+        importanceDiv.style.top = "200px";
+        playGameButton.style.width = "650px";
+        playGameButton.style.height = "550px";
+        gameImage.style.width = "650px";
+        gameImage.style.height = "550px";
+        aboutDescription.style.width = "625px";
+        aboutImportance.style.width = "650px";
+    } else {
+        seeGameButton.style.left = "1550px";
+        seeGameButton.style.top = "100px";
+        aboutDiv.style.left = "1000px";
+        aboutDiv.style.top = "150px";
+        importanceDiv.style.left = "1000px";
+        importanceDiv.style.top = "280px";
+        playGameButton.style.width = "850px";
+        playGameButton.style.height = "750px";
+        gameImage.style.width = "850px";
+        gameImage.style.height = "750px";
+        aboutDescription.style.width = "725px";
+        aboutImportance.style.width = "750px";
+    }
+
+}
+
+window.addEventListener('resize', () => {
+    updateGUIElements();
+});
+
+updateGUIElements();
