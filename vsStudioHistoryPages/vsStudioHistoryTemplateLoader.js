@@ -22,7 +22,9 @@ const templateData = {
         description: 'At the start of my junior year of high school, I joined the Ready Set App (RSA) club at my school. The point of the club is to create a mobile app that solves a problem that affects the local community. My group decided to make an app that would allow users to report and search for lost items. My group also decided to use React Native to build the app, as it would allow the app to work on both Android and iOS. React Native is very similar to JavaScript, which made learning the language easy.',
         importance: 'Making an app from scratch using React Native not only taught me how to make mobile apps but also how to implement many mobile phone features such as the camera and location. I also learned how to implement a database into a project, which I had never done prior to making this app. Overall, using React Native taught me many important programming skills, especially if I decide to get into mobile app development.',
         firstImage: '../images/lafApp2.png',
+        firstLink: 'https://github.com/rudra-s-1027/LostAndFind/tree/master',
         secondImage: '../images/lafApp.png',
+        secondLink: 'https://github.com/RealRottale1/LostAndFind',
     },
     '3': {
         pointName: 'Swift',
