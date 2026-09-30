@@ -17,9 +17,9 @@ const templateData = {
         about: 'During my junior year of high school, I decided that I wanted to learn other programming languages besides Luau and Python. I decided I would dip my toes into Java. I am by no means an expert at Java, but I am somewhat fluent with its syntax.',
         importance: 'Learning Java made learning JavaScript extremely easy, as Java and JavaScript share a lot of components. The games to the right are the only two Java games I have made so far (those being Minesweeper and Sudoku).',
         firstImage: '../images/minesweeper.png',
-        firstLink: 'https://replit.com/@CAMarkham/Minesweeper',
+        firstLink: 'https://github.com/RealRottale1/Playground/blob/main/JavaCreations/Minesweeper.java',
         secondImage: '../images/sudoku.png',
-        secondLink: 'https://replit.com/@CAMarkham/Sudoku',
+        secondLink: 'https://github.com/RealRottale1/Playground/blob/main/JavaCreations/Sudoku.java',
     },
     '2': {
         name: 'Rust',
@@ -28,9 +28,9 @@ const templateData = {
         about: 'This time period is between the creation of Tic Tac Toe and Mouse Maze (Version P). This time period is defined by my growth in knowledge outside of the C family and would eventually lead me to learning other programming languages like Swift.',
         importance: 'This time period is very important because it allowed me to expand my programming knowledge outside of the C family (C++, Java, and JavaScript). While Rust shares some core concepts and features with the C family, it is noticeably different, which greatly expanded my ability to pick up and learn new and unique programming languages. Learning Rust also allowed me to learn a lot more about references, which play a vital role in programming.',
         firstImage: '../images/ticTacToeRust.png',
-        firstLink: 'https://replit.com/@CAMarkham/All-Rust-Creations?v=1#src/main.rs',
+        firstLink: 'https://github.com/RealRottale1/Playground/blob/main/RustCreations/Creations/ticTacToeRust.rs',
         secondImage: '../images/mouseMazeP.png',
-        secondLink: 'https://replit.com/@CAMarkham/All-Rust-Creations?v=1#src/main.rs',
+        secondLink: 'https://github.com/RealRottale1/Playground/blob/main/RustCreations/Creations/mouseMazeRefVersion.rs',
     },
 };
 
