@@ -1,0 +1,204 @@
+body {
+    position: absolute;
+    z-index: -2;
+    margin: 0%;
+    padding: 0%;
+    background-color: bisque;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#mainCanvas {
+    position: absolute;
+    z-index: -1;
+    margin: 0%;
+    padding: 0%;
+    background-color: rgba(255, 0, 191, 0);
+    height: 100vh;
+    width: 100vw;
+}
+
+#removeControlDiv {
+    position: absolute;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    right: 0px;
+    transform: translate(100%);
+    background-color: rgba(240, 248, 255, 0);
+    color: red;
+    outline: 0px solid black;
+    border: 0px solid black;
+}
+
+#loadingDiv {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 200px;
+    height: 5vh;
+    transform: translateX(-100px);
+    background-color: rgba(47, 47, 47, 0.5);
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 25px;
+}
+
+#loadingBar {
+    width: 0%;
+    height: 100%;
+    background-color: rgb(38, 255, 0);
+    border-radius: 25px;
+}
+
+#cosmeticDiv {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 200px;
+    height: 100vh;
+    background-color: rgba(47, 47, 47, 0.5);
+    border-left: 5px solid rgb(0, 0, 0);
+    border-radius: 10px 0px 0px 10px;
+}
+
+#cosmeticDiv.close {
+    transform: translateX(100%);
+}
+
+#controlDiv {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 100vh;
+    background-color: rgba(47, 47, 47, 0.5);
+    border-right: 5px solid rgb(0, 0, 0);
+    border-radius: 0px 10px 10px 0px;
+}
+
+#controlDiv.close {
+    transform: translateX(-100%);
+}
+
+#mainTitle {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.spacer {
+    margin-bottom: 15px;
+}
+.spacerAligned {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.settingDesc {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.settingInput {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    outline: none;
+}
+
+.colorInput {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    outline: none;
+}
+
+#regenButton {
+    outline: none;
+}
+
+#loadingText {
+    width: 200%;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+#completeDiv {
+    padding: 0px 25px 0px 25px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(47, 47, 47, 0.5);
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 10px 10px 10px 10px;
+    display: none;
+}
+
+#completeText {
+    background-color: rgba(240, 248, 255, 0);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+#removeCompleteText {
+    position: absolute;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    right: 0px;
+    transform: translate(50%, -50%);
+    background-color: rgba(240, 248, 255, 0);
+    color: red;
+    outline: 0px solid black;
+    border: 0px solid black;
+}
+
+#removeCosmeticDiv {
+    position: absolute;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    left: 0px;
+    transform: translate(-100%);
+    background-color: rgba(240, 248, 255, 0);
+    color: red;
+    outline: 0px solid black;
+    border: 0px solid black;
+}
+
+#backgroundImage {
+    position: absolute;
+    z-index: -2;
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100vw;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}

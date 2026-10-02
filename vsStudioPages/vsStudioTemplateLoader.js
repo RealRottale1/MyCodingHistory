@@ -295,6 +295,35 @@ const templateData = {
         importance: 'This project is extremely important to me because it shows my mastery of complex data structures. I utilized a combination of a trienode structure along with a variety of different linked lists to efficiently sort and organize data.',
         playPage: 'https://github.com/RealRottale1/Playground/blob/main/Lyrinth_Lore/WordAnalysis.c',
     },
+
+    '42': {
+        name: 'Recursion Tree Simulator',
+        image: '../images/RecursiveTree.png',
+        description: "This program allows users to generate recursive trees. Style the tree to your liking and then sit back while the program generates the tree.",
+        importance: 'This program is important because it taught me in depth about recursion. Everything from calculating the loading bar to the various settings required me to modify the base recursion tree.',
+        playPage: '../RecursiveTreeSimulator.index.html',
+    },
+    '43': {
+        name: 'Easier Math Symbols',
+        image: '../images/easierMath.png',
+        description: "This plugin is designed to work Cengage math homework allows the user to type in complex math symbols and have them automatically converted into their associated symbol. Supported cuts are sqrt, root, pi, inf, and theta.",
+        importance: "This project is important because it was the first ever plugin I made. From making the plugin, I learned how to interface with a user's webpage (both read and write) as well as how to manipulate on-screen buttons.",
+        playPage: 'https://github.com/RealRottale1/MyCodingHistory/tree/main/EasierMathSymbols',
+    },
+    '44': {
+        name: 'Red Battle: Overrun',
+        image: '../images/redBattleOverrun.png',
+        description: "You have failed to slay Aldrin. He forces you to fall back. You must protect your people at all cost. If you fail your race along with many of the elfs will die.",
+        importance: 'This project is very important because it was my first project to use the Game Maker engine. Learning a new engine is never easy, which is why I am proud to say that within two weeks I was able to create and polish this project.',
+        playPage: 'https://rottale1.itch.io/red-battle-overrun',
+    },
+    '45': {
+        name: 'Chaotic Construction',
+        image: '../images/chaoticConstruction.png',
+        description: "Welcome to Chaotic Construction. You are a construction worker and must complete a variety of tasks to keep your job. Fail three tasks and you're fired! Every few tasks your controls are randomized, and the time to complete each task shortens. Good luck and don't get fired!",
+        importance: "Welcome to Chaotic Construction. You are a construction worker and must complete a variety of tasks to keep your job. Fail three tasks and you're fired! Every few tasks your controls are randomized, and the time to complete each task shortens. Good luck and don't get fired!",
+        playPage: 'https://rottale1.itch.io/chaotic-construction',
+    },
 };
 
 let pageID = window.location.search.replace('?pageID=','');

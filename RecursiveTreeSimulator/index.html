@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursion Tree Simulator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img id="backgroundImage" src="./textures/background.png">
+    <div id="controlDiv">
+        <button id="removeControlDiv"><</button>
+        <p id="mainTitle">Controls</p>
+        <div class="spacer">
+            <p class="settingDesc">Max Per Branch</p>
+            <input class="settingInput" id="maxBranch" type="number" value="5" min="1" max="12">
+        </div>
+        <div class="spacer">
+            <p class="settingDesc">Min Per Branch</p>
+            <input class="settingInput" id="minBranch" type="number" value="2" min="1" max="12">
+        </div>
+        <div class="spacer">
+            <p class="settingDesc">Max Depth</p>
+            <input class="settingInput" id="maxDepth" type="number" value="7" min="1" max="12">
+        </div>
+        <div class="spacer">
+            <p class="settingDesc">Min Depth</p>
+            <input class="settingInput" id="minDepth" type="number" value="5"  min="1" max="12">
+        </div>
+        <div class="spacer">
+            <p class="settingDesc">Depth Exit Percent</p>
+            <input class="settingInput" id="depthExitPercent" type="number" value="0"  min="0" max="100">
+        </div>
+        <div class="spacer">
+            <p class="settingDesc">Spread</p>
+            <input class="settingInput" id="spreadAmount" type="number" value="60"  min="1" max="320">
+        </div>
+        <div class="spacer">
+            <p class="settingDesc">Width Retention Percent</p>
+            <input class="settingInput" id="widthRetention" type="number" value="75"  min="0" max="200">
+        </div>
+        <div class="spacer">
+            <p class="settingDesc">Length Retention Percent</p>
+            <input class="settingInput" id="lengthRetention" type="number" value="75"  min="0" max="200">
+        </div>
+        <div class="spacer">
+            <p class="settingDesc">Leaf Size</p>
+            <input class="settingInput" id="leafSize" type="number" value="15"  min="0" max="50">
+        </div>
+        <div class="spacer">
+            <p class="settingDesc">Leaf Min Percent</p>
+            <input class="settingInput" id="leafMin" type="number" value="50" min="0" max="200">
+        </div>
+        <div class="spacer">
+            <p class="settingDesc">Leaf Max Percent</p>
+            <input class="settingInput" id="leafMax" type="number" value="125" min="0" max="200">
+        </div>
+        <div class="spacerAligned">
+            <button id="regenButton">Generate</button>
+        </div>
+    </div>
+    <div id="completeDiv">
+        <button id="removeCompleteText">X</button>
+        <p id="completeText">Complete</p>
+    </div>
+    <div id="cosmeticDiv">
+        <button id="removeCosmeticDiv">></button>
+        <p id="mainTitle">Render</p>
+        <div class="spacer">
+            <p class="settingDesc">Branch Color</p>
+            <input class="colorInput" id="branchR" type="number" value="161" min="0" max="255">
+            <input class="colorInput" id="branchG" type="number" value="68" min="0" max="255">
+            <input class="colorInput" id="branchB" type="number" value="7" min="0" max="255">
+            <input class="colorInput" id="branchA" type="number" value="100" min="0" max="100">
+        </div>
+        <div class="spacer">
+            <p class="settingDesc">Leaf Color</p>
+            <input class="colorInput" id="leafR" type="number" value="11" min="0" max="255">
+            <input class="colorInput" id="leafG" type="number" value="168" min="0" max="255">
+            <input class="colorInput" id="leafB" type="number" value="19" min="0" max="255">
+            <input class="colorInput" id="leafA" type="number" value="100" min="0" max="100">
+        </div>
+        <div class="spacer">
+            <p class="settingDesc">Background Color</p>
+            <input class="colorInput" id="backR" type="number" value="255" min="0" max="255">
+            <input class="colorInput" id="backG" type="number" value="0" min="0" max="255">
+            <input class="colorInput" id="backB" type="number" value="231" min="0" max="255">
+            <input class="colorInput" id="backA" type="number" value="100" min="0" max="100">
+        </div>
+        <div class="spacer">
+            <p class="settingDesc">Delay Ticks</p>
+            <input class="settingInput" id="delayTime" type="number" value="96" min="0" max="100">
+        </div>
+    </div>
+    <div id="loadingDiv">
+        <div id="loadingBar">
+        </div>
+        <p id="loadingText">PlaceHolder</p>
+    </div>
+    <canvas id="mainCanvas"></canvas>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -61,6 +61,24 @@ const templateData = {
         firstLink: 'https://github.com/RealRottale1/Playground/blob/main/UNCCharlottePrep/MazeAlgorithm.java',
         secondImage: '../images/WordAnalysis.png',
         secondLink: 'https://github.com/RealRottale1/Playground/blob/main/Lyrinth_Lore/WordAnalysis.c',
+    },
+    '7': {
+        pointName: 'Freshman Year',
+        description: 'This time period sums up all of my major accomplishments my freshman year at UNC Charlotte. This time period is still going on.',
+        importance: "I am still very early into my freshman year at UNC Charlotte, so I can't describe its importance in full detail just yet. However, if it continues the way it is currently going, I should learn a few more languages and possibly game engines before summer.",
+        firstImage: '../images/RecursiveTree.png',
+        firstLink: '../RecursiveTreeSimulator.index.html',
+        secondImage: '../images/chaoticConstruction.png',
+        secondLink: 'https://rottale1.itch.io/chaotic-construction',
+    },
+    '8': {
+        pointName: 'Verilog',
+        description: "When I was just learning Java way back in my junior year of high school, one of my friends' dads told me I should learn Verilog. The dad worked full time on developing and testing chips, and he used Verilog to do it. My freshman year of college I got bored and decided to finally (after around three years) learn Verilog.",
+        importance: "Verilog isn't like the other languages I have learned. It's a Hardware Description Language (HDL), meaning instead of writing code for a computer, it writes code for chips. This has some unique quirks, like how multiple portions of code can run in parallel at the same time. Learning Verilog expanded my understanding of computer principles and taught me how to think like a computer chip.",
+        firstImage: '../images/myFirstVerilog.png',
+        firstLink: 'https://github.com/RealRottale1/Playground/blob/main/Verilog/firstProject.v',
+        secondImage: '../images/myLastVerilog.png',
+        secondLink: 'https://github.com/RealRottale1/Playground/tree/main/Verilog',
     }
 };
 

@@ -1,8 +1,10 @@
 const mainCanvas = document.getElementById('background_canvas');
+const isTouchDevice = window.matchMedia("(pointer: coarse)").matches;
 
 function setUpStar(star) {
     const starIcon = document.createElement('img');
     starIcon.src = './images/starIcon.png';
+    starIcon.style.overflow = 'visible';
     starIcon.style.position = 'absolute';
     starIcon.style.bottom = '65%';
     starIcon.style.left = '95%';
@@ -15,20 +17,29 @@ function setUpStar(star) {
 const singleLines = document.querySelectorAll('.single_line');
 const observer = new IntersectionObserver(function(lines) {
     for (let line of lines) {
+        if (line.target.id === "title") continue;
         if (line.isIntersecting) {
             line.target.style.transition = "0.25s";
             line.target.style.transform = "scale(1)";
         } else {
             line.target.style.transform = "scale(0.75)";
-        }
+        } 
     }
 })
 singleLines.forEach(line => observer.observe(line));
 
 for (let line of singleLines) {
+    const star_span = document.createElement('span');
+    star_span.className = "single_line_span";
+    while (line.firstChild) {
+        star_span.appendChild(line.firstChild);
+    }
+    line.appendChild(star_span);
+
     const star = line.classList.contains("star_anchor") ? setUpStar(line) : null;
     const mainIcon = line.parentElement.querySelector(".section_icon");
     if (mainIcon) {mainIcon.style.transition = "0.25s"};
+    if (isTouchDevice) continue;
     line.addEventListener('mouseenter', function() {
         if (star) {star.style.transform = "rotate(12.5deg)"};
         if (mainIcon) {mainIcon.style.transform = "rotate(-12.5deg)"};
@@ -49,6 +60,9 @@ document.getElementById("robloxProfileButton").addEventListener('click', functio
 });
 document.getElementById("githubProfileButton").addEventListener('click', function() {
     window.open("https://github.com/RealRottale1", '_blank');
+});
+document.getElementById("itchProfileButton").addEventListener('click', function() {
+    window.open("https://rottale1.itch.io/", '_blank');
 });
 
 
@@ -184,6 +198,7 @@ async function handleBackground() {
     }); 
 
     while (true) {
+        section_buttons_render();
         resizeCanvas();
         makeDot();
         renderCanvas();
@@ -192,5 +207,53 @@ async function handleBackground() {
     };
 };
 
+function section_buttons_render() {
+    const titleDiv = document.getElementById("title");
+    if (isTouchDevice) {
+        titleDiv.style.fontSize = "45px";
+    } else {
+        titleDiv.style.fontSize = "75px";
+    }
+    titleDiv.style.position = "absolute";
+    titleDiv.style.width = `${Math.max(Math.min((window.innerWidth / 1536), 1), 1) * 100}%`;
+    titleDiv.style.left = `calc(50%)`;
+    titleDiv.style.transform = "translateX(-50%)";
+
+    const sectionDivs = document.getElementsByClassName("div-section");
+    const orderedDivs = [];
+    for (let _ of sectionDivs) {
+        orderedDivs.push([]);
+    }
+    const usingLinear = window.innerWidth <= 750 || window.innerHeight <= 500;
+    for (let sectionDiv of sectionDivs) {
+        const sectionID = usingLinear ? sectionDiv.dataset.sectionlinearid : sectionDiv.dataset.sectionid;
+        orderedDivs[sectionID-1].push(sectionDiv);
+    }
+    for (let i = 0; i < orderedDivs.length; i++) {
+        for (const sectionDiv of orderedDivs[i]) {
+            sectionDiv.style.position = "absolute";
+            sectionDiv.style.left = `calc(50% + ${sectionDiv.dataset.offset && !usingLinear ? (sectionDiv.dataset.offset * (1536 / window.innerWidth)) + "%" : "0px"})`;
+            
+            const isTitleDiv = sectionDiv.getElementsByClassName("section_icon").length == 1;
+            for (const child of sectionDiv.getElementsByClassName("single_line")) {
+                child.style.width = `${Math.max(Math.min((window.innerWidth / 450), 2), 0.75) * (isTitleDiv ? (usingLinear ? 1.25 : 1.125) : (usingLinear ? 1.125 : 1)) * 200}px`;
+                if (child.classList.contains('stretch_content') || child.classList.contains('start_stretch_content')) {
+                    child.style.margin = usingLinear ? "2.5px 0px 2.5px 0px" : "21px 0px 21px 0px";
+                }
+            }
+            
+            sectionDiv.style.transform = "translateX(-50%)";
+            if (i == 0) {
+                sectionDiv.style.top = `${titleDiv.offsetTop + titleDiv.offsetHeight + 10}px`; 
+            } else {
+                const previousDiv = orderedDivs[i-1][0];
+                const previousDivBottom = previousDiv.offsetTop + previousDiv.offsetHeight;
+                sectionDiv.style.top = `${previousDivBottom + (sectionDiv.dataset.offsety && !usingLinear ? Number(sectionDiv.dataset.offsety) : 0) + 10}px`;
+            }
+        }
+    }
+}
+section_buttons_render();
+window.addEventListener('resize', section_buttons_render);
 handleBackground();
 
