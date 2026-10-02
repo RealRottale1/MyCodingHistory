@@ -226,7 +226,7 @@ function section_buttons_render() {
     }
     const usingLinear = window.innerWidth <= 750 || window.innerHeight <= 500;
     for (let sectionDiv of sectionDivs) {
-        const sectionID = usingLinear ? sectionDiv.dataset.sectionlinearid : sectionDiv.dataset.sectionid;
+        const sectionID = usingLinear ? sectionDiv.dataset.sectionLinearId : sectionDiv.dataset.sectionid;
         orderedDivs[sectionID-1].push(sectionDiv);
     }
     for (let i = 0; i < orderedDivs.length; i++) {
