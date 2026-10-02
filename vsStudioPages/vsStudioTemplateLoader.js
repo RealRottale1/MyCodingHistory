@@ -357,7 +357,7 @@ function updateGUIElements() {
     if (dynamicWidth < 1600) {
         aboutDescription.style.width = "650px";
         aboutDescription.style.height = "400px";
-        importanceDiv.style.top = "250px";
+        importanceDiv.style.top = "325px";
         gameDisplayDiv.style.left = "800px";
         gameImage.style.width = "625px";
         gameImage.style.height = "375px";
@@ -367,7 +367,7 @@ function updateGUIElements() {
     } else {
         aboutDescription.style.width = "1000px";
         aboutDescription.style.height = "450px";
-        importanceDiv.style.top = "350px";
+        importanceDiv.style.top = "425px";
         gameDisplayDiv.style.left = "1175px";
         gameImage.style.width = "825px";
         gameImage.style.height = "425px";
@@ -385,5 +385,8 @@ window.addEventListener('resize', () => {
     updateGUIElements();
 });
 
+window.visualViewport.addEventListener('resize', () => {
+    updateGUIElements();
+});
 
 updateGUIElements();

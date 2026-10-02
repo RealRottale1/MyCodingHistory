@@ -5,6 +5,7 @@
 body {
     margin: 0px;
     background-color: rgb(30, 30, 30);
+    position: relative;
 }
 
 #top_bar {
@@ -15,10 +16,15 @@ body {
     height: 75px;
     width: 100%;
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     list-style: none;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
 }
 
 #logo_button:hover {
@@ -57,7 +63,7 @@ body {
 }
 
 #fake_searchbar {
-    display: flexbox;
+    display: flex;
     align-items: center;
     justify-items: center;
     align-content: center;
@@ -100,7 +106,7 @@ body {
 
 #about_div {
     position: relative;
-    top: 25px;
+    top: 100px;
     left: 100px;
     width: 250px;
     height: 250px;
@@ -108,7 +114,7 @@ body {
 
 #importance_div {
     position: relative;
-    top: 350px;
+    top: 425px;
     left: 100px;
     width: 250px;
     height: 250px;

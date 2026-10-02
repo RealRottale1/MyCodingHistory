@@ -131,7 +131,7 @@ function updateGUIElements() {
         aboutDescription.style.width = "800px";
         aboutDescription.style.height = "400px";
         aboutDescription.style.fontSize = "28px";
-        importanceDiv.style.top = "250px";
+        importanceDiv.style.top = "325px";
         gameDisplayDiv1.style.left = "900px";
         gameDisplayDiv2.style.left = "900px";
         gameImage1.style.width = "625px";
@@ -148,7 +148,7 @@ function updateGUIElements() {
         aboutDescription.style.width = "1000px";
         aboutDescription.style.height = "450px";
         aboutDescription.style.fontSize = "35px";
-        importanceDiv.style.top = "350px";
+        importanceDiv.style.top = "425px";
         gameDisplayDiv1.style.left = "1175px";
         gameDisplayDiv2.style.left = "1175px";
         gameImage1.style.width = "825px";
@@ -167,6 +167,10 @@ function updateGUIElements() {
 }
 
 window.addEventListener('resize', () => {
+    updateGUIElements();
+});
+
+window.visualViewport.addEventListener('resize', () => {
     updateGUIElements();
 });
 
