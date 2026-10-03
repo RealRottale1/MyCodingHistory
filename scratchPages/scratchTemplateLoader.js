@@ -167,11 +167,11 @@ function updateGUIElements() {
     const dynamicWidth = window.innerWidth;
     if (dynamicWidth < 1600) {
         seeGameButton.style.left = "1250px";
-        seeGameButton.style.top = "65px";
+        seeGameButton.style.top = "140px";
         aboutDiv.style.left = "800px";
-        aboutDiv.style.top = "50px";
+        aboutDiv.style.top = "125px";
         importanceDiv.style.left = "800px";
-        importanceDiv.style.top = "200px";
+        importanceDiv.style.top = "275px";
         playGameButton.style.width = "650px";
         playGameButton.style.height = "550px";
         gameImage.style.width = "650px";
@@ -180,11 +180,11 @@ function updateGUIElements() {
         aboutImportance.style.width = "650px";
     } else {
         seeGameButton.style.left = "1550px";
-        seeGameButton.style.top = "100px";
+        seeGameButton.style.top = "175px";
         aboutDiv.style.left = "1000px";
-        aboutDiv.style.top = "150px";
+        aboutDiv.style.top = "225px";
         importanceDiv.style.left = "1000px";
-        importanceDiv.style.top = "280px";
+        importanceDiv.style.top = "355px";
         playGameButton.style.width = "850px";
         playGameButton.style.height = "750px";
         gameImage.style.width = "850px";
@@ -196,6 +196,10 @@ function updateGUIElements() {
 }
 
 window.addEventListener('resize', () => {
+    updateGUIElements();
+});
+
+window.visualViewport.addEventListener('resize', () => {
     updateGUIElements();
 });
 

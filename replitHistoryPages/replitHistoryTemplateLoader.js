@@ -125,5 +125,8 @@ window.addEventListener('resize', () => {
     updateGUIElements();
 });
 
+window.visualViewport.addEventListener('resize', () => {
+    updateGUIElements();
+});
 
 updateGUIElements();

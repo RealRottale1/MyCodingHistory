@@ -8,15 +8,21 @@ body {
 }
 
 #header {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-items: center;
-    justify-content: center;
-    padding-left: 1%;
+    padding: 0px;
+    margin: 0px;
+    background-color: hsl(260, 60%, 60%);
     height: 75px;
     width: 100%;
-    background-color: hsl(260, 60%, 60%);
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    list-style: none;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 #title {
@@ -32,15 +38,18 @@ body {
 
 #scratch_icon {
     /*margin-left: 50px;*/
-    display: flexbox;
+    display: flex;
     justify-content: center;
     align-content: center;
+    align-items: center;
     height: 75px;
     width: 100px;
 }
 
 #scratch_button {
     position: relative;
+    padding: 0px;
+    display: flex;
     border: 0px solid black;
     height: 40px;
     width: 120px;
@@ -144,9 +153,9 @@ body {
 }
 
 #see_inside {
-    display: flexbox;
+    display: flex;
     position: relative;
-    top: 100px;
+    top: 175px;
     left: 1550px;
     height: 50px;
     width: 200px;
@@ -224,7 +233,7 @@ body {
 
 #about {
     position: relative;
-    top: 150px;
+    top: 225px;
     left: 1000px;
     height: 200px;
     width: 750px;
@@ -232,7 +241,7 @@ body {
 
 #importance {
     position: relative;
-    top: 280px;
+    top: 355px;
     left: 1000px;
     height: 200px;
     width: 750px;

@@ -1,7 +1,7 @@
 const templateData = {
     '0': {
         pointName: 'Early Scratch',
-        description: 'This time period is between the time I created my Scratch account (some time in February of 2019) and right before I created the game titled THE ROAD (exact date lost to time). This time period is mainly defined by my very primitive code, which lacked many variables and if statements. The most advanced game from this time period has to be my game titled Dart Thrower as it is one of the first games.',
+        description: 'This time period is between the time I created my Scratch account (some time in February of 2019) and right before I created the game titled THE ROAD (exact date lost to time). This time period is mainly defined by my very primitive code, which lacked many variables and if statements. The most advanced game from this time period has to be my game titled Dart Thrower.',
         importance: 'This time period is very important because it is responsible for me falling in love with programming. Without Scratch I would not have found my passion and future career.',
         firstName: 'bear',
         firstImage: '../images/bear.png',
@@ -84,9 +84,9 @@ function updateGUIElements() {
     const dynamicWidth = window.innerWidth;
     if (dynamicWidth < 1600) {
         aboutDiv.style.left = "75px";
-        aboutDiv.style.top = "75px";
+        aboutDiv.style.top = "150px";
         importanceDiv.style.left = "75px";
-        importanceDiv.style.top = "275px";
+        importanceDiv.style.top = "350px";
         aboutDescription.style.width = "850px";
         aboutDescription.style.height = "275px";
         aboutImportance.style.width = "850px";
@@ -95,9 +95,9 @@ function updateGUIElements() {
         game2.style.left = "1050px";
     } else {
         aboutDiv.style.left = "150px";
-        aboutDiv.style.top = "100px";
+        aboutDiv.style.top = "175px";
         importanceDiv.style.left = "150px";
-        importanceDiv.style.top = "280px";
+        importanceDiv.style.top = "355px";
         aboutDescription.style.width = "1000px";
         aboutDescription.style.height = "250px";
         aboutImportance.style.width = "1000px";
@@ -112,5 +112,8 @@ window.addEventListener('resize', () => {
     updateGUIElements();
 });
 
+window.visualViewport.addEventListener('resize', () => {
+    updateGUIElements();
+});
 
 updateGUIElements();

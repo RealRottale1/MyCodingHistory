@@ -8,16 +8,21 @@ body {
 }
 
 #top_bar {
+    background-color: #EBECED;
     padding: 0px;
     margin: 0px;
-    background-color: #EBECED;
-    height: 100px;
+    height: 75px;
     width: 100%;
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     list-style: none;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
 }
 
 #home_button, #code_button {
@@ -32,7 +37,11 @@ body {
 .img_item {
     height: 50px;
     width: 50px;
-    margin: 25px 0px 0px 25px;
+    margin: 0px 0px 0px 25px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 #star_icon {
@@ -48,7 +57,7 @@ body {
 #project_name {
     position: absolute;
     left: 150px;
-    margin: 27.5px 0px 0px 50px;
+    margin: 0px 0px 0px 50px;
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 45px;
 }
@@ -58,7 +67,7 @@ body {
     left: 750px;
     display: flex;
     border-radius: 12.5%;
-    margin: 12.5px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     background-color: #fcfcfc;
     height: 75px;
     width: 200px;

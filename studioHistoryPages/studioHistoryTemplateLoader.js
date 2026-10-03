@@ -102,14 +102,18 @@ const mainDiv = document.getElementById('main');
 function updateGUIElements() {
     const dynamicWidth = window.innerWidth;
     if (dynamicWidth < 1600) {
-        mainDiv.style.left = "75px";
+        mainDiv.style.left = "25px";
     } else {
-        mainDiv.style.left = "250px";
+        mainDiv.style.left = "175px";
     }
 
 }
 
 window.addEventListener('resize', () => {
+    updateGUIElements();
+});
+
+window.visualViewport.addEventListener('resize', () => {
     updateGUIElements();
 });
 

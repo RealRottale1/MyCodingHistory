@@ -107,7 +107,7 @@ body {
 #about_div {
     position: relative;
     top: 100px;
-    left: 100px;
+    left: 75px;
     width: 250px;
     height: 250px;
 }
@@ -115,7 +115,7 @@ body {
 #importance_div {
     position: relative;
     top: 425px;
-    left: 100px;
+    left: 75px;
     width: 250px;
     height: 250px;
 }
