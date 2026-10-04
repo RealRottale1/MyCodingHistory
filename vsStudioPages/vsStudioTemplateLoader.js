@@ -39,7 +39,7 @@ const templateData = {
         image: '../images/pigLatinConverter.png',
         description: 'This project allows a user to convert plain text into Pig Latin. It can convert multiple paragraphs of text in mere milliseconds thanks to its use of multithreading.',
         importance: 'This project is important because it was my first ever to use multithreading. This project is especially important because it was my second C++ project, which made my professional implementation of multithreading even more impressive.',
-        playPage: 'https://www.programiz.com/online-compiler/6apVJFNNoexSF',
+        playPage: 'https://www.programiz.com/online-compiler/9dIK3IuJHh3zq',
     },
     '6': {
         name: 'Roman Numerals Converter',
@@ -301,7 +301,7 @@ const templateData = {
         image: '../images/RecursiveTree.png',
         description: "This program allows users to generate recursive trees. Style the tree to your liking and then sit back while the program generates the tree.",
         importance: 'This program is important because it taught me in depth about recursion. Everything from calculating the loading bar to the various settings required me to modify the base recursion tree.',
-        playPage: '../RecursiveTreeSimulator.index.html',
+        playPage: '../RecursiveTreeSimulator/index.html',
     },
     '43': {
         name: 'Easier Math Symbols',

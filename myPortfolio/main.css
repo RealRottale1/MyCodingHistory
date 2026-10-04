@@ -1,0 +1,233 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #D1CCB7;
+}
+
+#qualities {
+    display: flex;
+    list-style: none;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.qualities_text {
+    font-family: "Builder Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    margin: 0px 5px 0px 5px;
+    font-size: 32px;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+#title::-webkit-scrollbar {
+    display: none;
+}
+#title {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    overflow-x: auto;
+    background-color: #A4A89A;
+    border-bottom: 1px solid #85897c;
+    padding: 0px;
+    margin: 0px;
+    height: min(50px, 15vh);
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    list-style: none;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.first_tab_button_holder {
+    margin-left: 150px !important;
+}
+
+.last_tab_button_holder {
+    margin-right: 150px !important;
+}
+
+.tab_button_holder {
+    color: rgb(57, 59, 61);
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 25px;
+    margin-left: 50px;
+    margin-top: 0px;
+}
+
+.tab_button {
+    font-family: "Builder Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    padding: 0px;
+    border: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#main_div {
+    zoom: 0.8;
+    margin-top: 75px;
+    padding: 20px 0;
+
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#about_me_div{
+    margin: 0px;
+    padding: 0px;
+    width: 1500px;
+    height: 300px;
+    flex-shrink: 0;
+    background-color: #E0E5D4;
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+#more_about_me_div {
+    margin: 0px;
+    padding: 0px;
+    width: 1500px;
+    height: 300px;
+    flex-shrink: 0;
+    background-color: #E0E5D4;
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    border-radius: 25px;
+}
+
+#about_passion_div{
+    margin: 0px;
+    padding: 0px;
+    width: 1500px;
+    height: 300px;
+    flex-shrink: 0;
+    background-color: #E0E5D4;
+    display: flex;
+    list-style: none;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    border-radius: 25px;
+}
+
+#more_text {
+    margin: 20px;
+    font-family: "Builder Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 64px;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+
+#passion_text {
+    margin: 20px;
+    font-family: "Builder Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 64px;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+
+#more_text_2 {
+    width: auto;
+    align-self: stretch;
+    margin: 0px 15px 0px 15px;
+    padding: 0px;
+    font-family: "Builder Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 38px;
+    color: black;
+    white-space: normal;
+    overflow: hidden;
+    text-align: left;
+}
+
+#passion_text_2 {
+    width: auto;
+    align-self: stretch;
+    margin: 0px 15px 0px 15px;
+    padding: 0px;
+    font-family: "Builder Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 38px;
+    color: black;
+    white-space: normal;
+    overflow: hidden;
+    text-align: right;
+}
+
+#about_me_profile_div {
+    height: 100%;
+    flex: 1;
+}
+
+#profile_picture {
+    height: 100%;
+    border-radius: 25px;
+}
+
+#about_me_title_div {
+    height: 100%;
+    flex: 3;
+    overflow: hidden;
+}
+
+#about_me_title {
+    padding-top: 50px;
+    margin: 0px;
+    font-family: "Builder Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 64px;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+
+#about_me_title_2 {
+    margin: 0px;
+    font-family: "Builder Sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 54px;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
