@@ -27,7 +27,7 @@ const projectData = {
         name: "Calculator",
         language: "C++ Program",
         description: "A C++-based program that implements a fully functional calculator. It accepts all operations, including parentheses and exponents. This is accomplished through its unique tokening mechanism.",
-        image: "../../images/cppIcon.webp",
+        image: "../../images/cppIconW.webp",
         ref: "https://github.com/RealRottale1/Playground/blob/main/CPPCreations/calculator.cpp",
     },
     '5': {
