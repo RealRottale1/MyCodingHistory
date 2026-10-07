@@ -41,7 +41,7 @@ const projectData = {
         name: "C++",
         language: "Proficient",
         description: `I self-taught myself C++, including threads, data structures, and advanced pointers. I have taken college classes designed to teach C, which is similar to C++.`,
-        image: "../../images/cPPIconW.webp",
+        image: "../../images/cppIconW.webp",
         ref: "https://isocpp.org/",
     },
     '6': {
