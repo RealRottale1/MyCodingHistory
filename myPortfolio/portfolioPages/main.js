@@ -2,12 +2,19 @@ const project_template = document.getElementById("project_template");
 const main_div = document.getElementById("main_div");
 
 const projectData = {
-    '1': {
+    '0': {
         name: "Lost and Find",
         language: "Full Stack Android App",
         description: "As part of a project in my junior year of high school, two of my teammates and I were tasked with developing an Android-based application to help our local community. We designed the Lost and Find app, which allows users to report and recover lost items. In my team I was in charge of developing the front and back end as well as designing the database for the application.",
         image: "../../images/lostAndFinLogo.png",
         ref: "https://github.com/rudra-s-1027/LostAndFind/tree/master",
+    },
+    '1': {
+        name: "Scuff",
+        language: "Interpeted Block Programming Language",
+        description: "An interpreted block programming language designed to transition young programmers from Scratch to an intermediate-level programming language. Scuff includes many features found in advanced-level programming languages, such as scanners, branch instructions, and variable scope.",
+        image: "../../images/scuffIcon.png",
+        ref: "https://rottale1.itch.io/scuff",
     },
     '2': {
         name: "Big Boggle Solver",

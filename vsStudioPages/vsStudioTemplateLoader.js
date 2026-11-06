@@ -324,6 +324,13 @@ const templateData = {
         importance: "Welcome to Chaotic Construction. You are a construction worker and must complete a variety of tasks to keep your job. Fail three tasks and you're fired! Every few tasks your controls are randomized, and the time to complete each task shortens. Good luck and don't get fired!",
         playPage: 'https://rottale1.itch.io/chaotic-construction',
     },
+    '46': {
+        name: 'Scuff',
+        image: '../images/scuffLogo.png',
+        description: "Scuff is a block-based programming language similar to Scratch that integrates intermediate and advanced programming concepts. Scuff is designed to make the jump from Scratch to any typed programming language easier.",
+        importance: "This project is extremely important to me because it is the first programming language I have ever made. Working on Scuff opened my eyes to how other programming languages accomplish certain tasks like multithreading, reading input, and handling functions.",
+        playPage: 'https://rottale1.itch.io/scuff',
+    },
 };
 
 let pageID = window.location.search.replace('?pageID=','');

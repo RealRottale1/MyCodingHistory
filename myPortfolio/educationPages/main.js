@@ -3,90 +3,97 @@ const main_div = document.getElementById("main_div");
 
 const projectData = {
     '0': {
+        name: "Scuff",
+        language: "Creator",
+        description: `An interpreted block programming language created by me my freshman year at UNC Charlotte. Scuff is designed visually similarly to Scratch but with design aspects from other languages like Risc-V and Java.`,
+        image: "../../images/scuffIcon.png",
+        ref: "https://rottale1.itch.io/scuff",
+    },
+    '1': {
         name: "Python",
         language: "Proficient",
         description: `I got PCAP and ITS+ certified in my sophomore year of high school. Both of those certifications are industry-level certifications used to demonstrate knowledge of the Python language.`,
         image: "../../images/pythonLogo.png",
         ref: "https://www.python.org/",
     },
-    '1': {
+    '2': {
         name: "Java",
         language: "Proficient",
         description: `I took Java 1 and 2 in my senior year of high school through Wake Tech. I furthered my Java education by taking a data structures and algorithms class based around Java in college.`,
         image: "../../images/javaLogo.png",
         ref: "https://www.java.com/en/",
     },
-    '2': {
+    '3': {
         name: "JavaScript",
         language: "Proficient",
         description: `I took an intro to JavaScript class in my junior year of high school through Wake Tech. I have made many websites like this one using JavaScript paired with HTML and CSS.`,
         image: "../../images/javaScriptLogo.png",
         ref: "https://ecma-international.org/publications-and-standards/standards/ecma-262/",
     },
-    '3': {
+    '4': {
         name: "React Native",
         language: "Novice",
         description: `As part of a club in my junior year of high school, I used React Native to build the Lost and Found mobile app. The core of React Native is very similar to JavaScript.`,
         image: "../../images/reactNativeLogo.png",
         ref: "https://expo.dev/grow/react-native_g",
     },
-    '4': {
+    '5': {
         name: "C",
         language: "Intermediate",
         description: `I self-taught myself C before taking an intro to computer systems class in college, which taught the basics of C. The core of C is very similar to C++.`,
         image: "../../images/cIcon.webp",
         ref: "https://www.c-language.org/",
     },
-    '5': {
+    '6': {
         name: "C++",
         language: "Proficient",
         description: `I self-taught myself C++, including threads, data structures, and advanced pointers. I have taken college classes designed to teach C, which is similar to C++.`,
         image: "../../images/cppIconW.webp",
         ref: "https://isocpp.org/",
     },
-    '6': {
+    '7': {
         name: "Swift",
         language: "Intermediate",
         description: `I self-taught myself Swift and have made many big terminal projects.`,
         image: "../../images/swiftIcon.png",
         ref: "https://www.swift.org/",
     },
-    '7': {
+    '8': {
         name: "Rust",
         language: "Novice",
         description: `I self-taught myself Rust and have made many terminal projects.`,
         image: "../../images/rustIcon.png",
         ref: "https://rust-lang.org/",
     },
-    '8': {
+    '9': {
         name: "Lua",
         language: "Proficient",
         description: `Lua is the base language used in Roblox Studio, which I have developed games in for over 5 years. Lua was my first programming language and is the one I have used the most.`,
         image: "../../images/luaLogo.png",
         ref: "https://www.lua.org/",
     },
-    '9': {
+    '10': {
         name: "GML",
-        language: "Novice",
+        language: "Intermediate",
         description: `I self-taught myself GML for a club in college. I have made a few games using the engine.`,
         image: "../../images/gameMakerLogo.webp",
         ref: "https://gamemaker.io/en",
     },
-    '10': {
+    '11': {
         name: "Risc-V",
         language: "Novice",
         description: `I self-taught myself Risc-V before taking an intro to computer systems class in college, which focuses primarily on Risc-V.`,
         image: "../../images/riscVLogo.webp",
         ref: "https://riscv.org/",
     },
-    '11': {
+    '12': {
         name: "Verilog",
         language: "Novice",
         description: `I self-taught myself Verilog and know the very basics.`,
         image: "../../images/verilogLogo.png",
         ref: "https://www.verilog.com/",
     },
-    '12': {
+    '13': {
         name: "Excel",
         language: "Proficient",
         description: `I got Excel Associate and Excel Expert certified in my sophomore year of high school. Both of those certifications are industry-level certifications awarded by Microsoft themself.`,
